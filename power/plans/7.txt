@@ -1,0 +1,79 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	supp_nation,
+	cust_nation,
+	l_year,
+	sum(volume) as revenue
+from
+	(
+		select
+			n1.n_name as supp_nation,
+			n2.n_name as cust_nation,
+			extract(year from l_shipdate) as l_year,
+			l_extendedprice * (1 - l_discount) as volume
+		from
+			supplier,
+			lineitem,
+			orders,
+			customer,
+			nation n1,
+			nation n2
+		where
+			s_suppkey = l_suppkey
+			and o_orderkey = l_orderkey
+			and c_custkey = o_custkey
+			and s_nationkey = n1.n_nationkey
+			and c_nationkey = n2.n_nationkey
+			and (
+				(n1.n_name = 'IRAQ' and n2.n_name = 'UNITED KINGDOM')
+				or (n1.n_name = 'UNITED KINGDOM' and n2.n_name = 'IRAQ')
+			)
+			and l_shipdate between date '1995-01-01' and date '1996-12-31'
+	) as shipping
+group by
+	supp_nation,
+	cust_nation,
+	l_year
+order by
+	supp_nation,
+	cust_nation,
+	l_year;
+                                                                                     QUERY PLAN                                                                                      
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=23864393.53..23864401.20 rows=3069 width=64)
+   Sort Key: n1.n_name, n2.n_name, (date_part('year'::text, (lineitem.l_shipdate)::timestamp without time zone))
+   ->  HashAggregate  (cost=23864169.74..23864215.78 rows=3069 width=64)
+         Group Key: n1.n_name, n2.n_name, date_part('year'::text, (lineitem.l_shipdate)::timestamp without time zone)
+         ->  Hash Join  (cost=9354523.31..23855070.97 rows=606585 width=64)
+               Hash Cond: (lineitem.l_orderkey = orders.o_orderkey)
+               Join Filter: (((n1.n_name = 'IRAQ'::bpchar) AND (n2.n_name = 'UNITED KINGDOM'::bpchar)) OR ((n1.n_name = 'UNITED KINGDOM'::bpchar) AND (n2.n_name = 'IRAQ'::bpchar)))
+               ->  Hash Join  (cost=3903134.91..18122252.66 rows=14575758 width=42)
+                     Hash Cond: (lineitem.l_suppkey = supplier.s_suppkey)
+                     ->  Bitmap Heap Scan on lineitem  (cost=3865787.51..17255909.04 rows=182196969 width=20)
+                           Recheck Cond: ((l_shipdate >= '1995-01-01'::date) AND (l_shipdate <= '1996-12-31'::date))
+                           ->  Bitmap Index Scan on lineitem_l_shipdate_l_suppkey__idx  (cost=0.00..3820238.27 rows=182196969 width=0)
+                                 Index Cond: ((l_shipdate >= '1995-01-01'::date) AND (l_shipdate <= '1996-12-31'::date))
+                     ->  Hash  (cost=36347.40..36347.40 rows=80000 width=30)
+                           ->  Hash Join  (cost=1.40..36347.40 rows=80000 width=30)
+                                 Hash Cond: (supplier.s_nationkey = n1.n_nationkey)
+                                 ->  Seq Scan on supplier  (cost=0.00..31796.00 rows=1000000 width=8)
+                                 ->  Hash  (cost=1.38..1.38 rows=2 width=30)
+                                       ->  Seq Scan on nation n1  (cost=0.00..1.38 rows=2 width=30)
+                                             Filter: ((n_name = 'IRAQ'::bpchar) OR (n_name = 'UNITED KINGDOM'::bpchar))
+               ->  Hash  (cost=5301388.40..5301388.40 rows=12000000 width=30)
+                     ->  Hash Join  (cost=586015.40..5301388.40 rows=12000000 width=30)
+                           Hash Cond: (orders.o_custkey = customer.c_custkey)
+                           ->  Seq Scan on orders  (cost=0.00..4032873.00 rows=150000000 width=8)
+                           ->  Hash  (cost=571015.40..571015.40 rows=1200000 width=30)
+                                 ->  Hash Join  (cost=1.40..571015.40 rows=1200000 width=30)
+                                       Hash Cond: (customer.c_nationkey = n2.n_nationkey)
+                                       ->  Seq Scan on customer  (cost=0.00..502764.00 rows=15000000 width=8)
+                                       ->  Hash  (cost=1.38..1.38 rows=2 width=30)
+                                             ->  Seq Scan on nation n2  (cost=0.00..1.38 rows=2 width=30)
+                                                   Filter: ((n_name = 'UNITED KINGDOM'::bpchar) OR (n_name = 'IRAQ'::bpchar))
+(31 rows)
+
+COMMIT;
+COMMIT

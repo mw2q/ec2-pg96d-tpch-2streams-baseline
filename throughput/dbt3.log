@@ -1,0 +1,6287 @@
+2015-08-27 22:51:45 EDT [3569]: [1-1] user=,db=,app=,client= LOG:  database system was shut down at 2015-08-27 22:51:43 EDT
+2015-08-27 22:51:45 EDT [3569]: [2-1] user=,db=,app=,client= LOG:  MultiXact member wraparound protections are now enabled
+2015-08-27 22:51:45 EDT [3568]: [1-1] user=,db=,app=,client= LOG:  database system is ready to accept connections
+2015-08-27 22:51:45 EDT [3573]: [1-1] user=,db=,app=,client= LOG:  autovacuum launcher started
+2015-08-27 22:52:08 EDT [3570]: [1-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (23 seconds apart)
+2015-08-27 22:52:08 EDT [3570]: [2-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 22:52:08 EDT [3570]: [3-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 22:52:15 EDT [3570]: [4-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 65122 buffers (6.2%); 0 transaction log file(s) added, 2 removed, 0 recycled; write=6.380 s, sync=0.677 s, total=7.072 s; sync files=72, longest=0.066 s, average=0.009 s; distance=405986 kB, estimate=405986 kB
+2015-08-27 22:52:22 EDT [3570]: [5-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (14 seconds apart)
+2015-08-27 22:52:22 EDT [3570]: [6-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 22:52:22 EDT [3570]: [7-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 22:52:29 EDT [3570]: [8-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 54803 buffers (5.2%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=6.173 s, sync=0.558 s, total=6.738 s; sync files=59, longest=0.025 s, average=0.009 s; distance=407554 kB, estimate=407554 kB
+2015-08-27 22:52:35 EDT [3570]: [9-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (13 seconds apart)
+2015-08-27 22:52:35 EDT [3570]: [10-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 22:52:35 EDT [3570]: [11-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 22:52:41 EDT [3570]: [12-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 55873 buffers (5.3%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=5.694 s, sync=0.522 s, total=6.221 s; sync files=50, longest=0.021 s, average=0.010 s; distance=414989 kB, estimate=414989 kB
+2015-08-27 22:52:46 EDT [3570]: [13-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (11 seconds apart)
+2015-08-27 22:52:46 EDT [3570]: [14-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 22:52:46 EDT [3570]: [15-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 22:52:54 EDT [3570]: [16-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 54543 buffers (5.2%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=5.757 s, sync=1.420 s, total=7.181 s; sync files=50, longest=0.216 s, average=0.028 s; distance=405324 kB, estimate=414023 kB
+2015-08-27 22:52:59 EDT [3570]: [17-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (13 seconds apart)
+2015-08-27 22:52:59 EDT [3570]: [18-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 22:52:59 EDT [3570]: [19-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 22:53:06 EDT [3570]: [20-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 26829 buffers (2.6%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=6.006 s, sync=0.588 s, total=6.597 s; sync files=50, longest=0.033 s, average=0.011 s; distance=413013 kB, estimate=413922 kB
+2015-08-27 22:53:13 EDT [3570]: [21-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (14 seconds apart)
+2015-08-27 22:53:13 EDT [3570]: [22-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 22:53:13 EDT [3570]: [23-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 22:53:19 EDT [3570]: [24-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 27103 buffers (2.6%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=6.202 s, sync=0.097 s, total=6.311 s; sync files=50, longest=0.007 s, average=0.001 s; distance=409494 kB, estimate=413479 kB
+2015-08-27 22:53:27 EDT [3570]: [25-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (14 seconds apart)
+2015-08-27 22:53:27 EDT [3570]: [26-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 22:53:27 EDT [3570]: [27-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 22:53:33 EDT [3570]: [28-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 36127 buffers (3.4%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=5.733 s, sync=0.508 s, total=6.248 s; sync files=50, longest=0.019 s, average=0.010 s; distance=405005 kB, estimate=412632 kB
+2015-08-27 22:53:38 EDT [3570]: [29-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (11 seconds apart)
+2015-08-27 22:53:38 EDT [3570]: [30-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 22:53:38 EDT [3570]: [31-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 22:53:44 EDT [3570]: [32-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 41486 buffers (4.0%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=5.149 s, sync=0.575 s, total=5.737 s; sync files=50, longest=0.026 s, average=0.011 s; distance=412906 kB, estimate=412906 kB
+2015-08-27 22:53:50 EDT [3570]: [33-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (12 seconds apart)
+2015-08-27 22:53:50 EDT [3570]: [34-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 22:53:50 EDT [3570]: [35-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 22:53:55 EDT [3570]: [36-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 30475 buffers (2.9%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=4.709 s, sync=0.677 s, total=5.526 s; sync files=50, longest=0.116 s, average=0.013 s; distance=407344 kB, estimate=412350 kB
+2015-08-27 22:54:02 EDT [3570]: [37-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (12 seconds apart)
+2015-08-27 22:54:02 EDT [3570]: [38-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 22:54:02 EDT [3570]: [39-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 22:54:08 EDT [3570]: [40-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 32616 buffers (3.1%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=5.482 s, sync=0.553 s, total=6.048 s; sync files=50, longest=0.022 s, average=0.011 s; distance=411503 kB, estimate=412265 kB
+2015-08-27 22:54:13 EDT [3570]: [41-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (11 seconds apart)
+2015-08-27 22:54:13 EDT [3570]: [42-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 22:54:13 EDT [3570]: [43-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 22:54:19 EDT [3570]: [44-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 55831 buffers (5.3%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=5.163 s, sync=0.652 s, total=5.824 s; sync files=52, longest=0.028 s, average=0.012 s; distance=409922 kB, estimate=412031 kB
+2015-08-27 22:54:24 EDT [3570]: [45-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (11 seconds apart)
+2015-08-27 22:54:24 EDT [3570]: [46-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 22:54:24 EDT [3570]: [47-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 22:54:31 EDT [3570]: [48-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 54885 buffers (5.2%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=6.337 s, sync=0.560 s, total=6.906 s; sync files=50, longest=0.024 s, average=0.011 s; distance=408280 kB, estimate=411656 kB
+2015-08-27 22:54:36 EDT [3570]: [49-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (12 seconds apart)
+2015-08-27 22:54:36 EDT [3570]: [50-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 22:54:36 EDT [3570]: [51-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 22:54:41 EDT [3570]: [52-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 54971 buffers (5.2%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=4.664 s, sync=0.545 s, total=5.221 s; sync files=50, longest=0.021 s, average=0.010 s; distance=408304 kB, estimate=411321 kB
+2015-08-27 22:54:45 EDT [3570]: [53-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (9 seconds apart)
+2015-08-27 22:54:45 EDT [3570]: [54-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 22:54:45 EDT [3570]: [55-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 22:54:50 EDT [3570]: [56-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 54939 buffers (5.2%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=4.411 s, sync=0.545 s, total=4.969 s; sync files=50, longest=0.021 s, average=0.010 s; distance=408687 kB, estimate=411057 kB
+2015-08-27 22:54:54 EDT [3570]: [57-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (9 seconds apart)
+2015-08-27 22:54:54 EDT [3570]: [58-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 22:54:54 EDT [3570]: [59-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 22:55:00 EDT [3570]: [60-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 55919 buffers (5.3%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=5.175 s, sync=0.282 s, total=5.469 s; sync files=50, longest=0.019 s, average=0.005 s; distance=415499 kB, estimate=415499 kB
+2015-08-27 22:55:04 EDT [3570]: [61-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (10 seconds apart)
+2015-08-27 22:55:04 EDT [3570]: [62-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 22:55:04 EDT [3570]: [63-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 22:55:08 EDT [3570]: [64-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 54682 buffers (5.2%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=3.920 s, sync=0.521 s, total=4.452 s; sync files=50, longest=0.021 s, average=0.010 s; distance=406271 kB, estimate=414576 kB
+2015-08-27 22:55:12 EDT [3570]: [65-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (8 seconds apart)
+2015-08-27 22:55:12 EDT [3570]: [66-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 22:55:12 EDT [3570]: [67-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 22:55:16 EDT [3570]: [68-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 54695 buffers (5.2%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=3.703 s, sync=0.549 s, total=4.274 s; sync files=50, longest=0.024 s, average=0.010 s; distance=406431 kB, estimate=413762 kB
+2015-08-27 22:55:20 EDT [3570]: [69-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (8 seconds apart)
+2015-08-27 22:55:20 EDT [3570]: [70-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 22:55:20 EDT [3570]: [71-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 22:55:24 EDT [3570]: [72-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 55511 buffers (5.3%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=3.449 s, sync=0.553 s, total=4.014 s; sync files=50, longest=0.021 s, average=0.011 s; distance=412648 kB, estimate=413650 kB
+2015-08-27 22:55:27 EDT [3570]: [73-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (7 seconds apart)
+2015-08-27 22:55:27 EDT [3570]: [74-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 22:55:27 EDT [3570]: [75-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 22:55:32 EDT [3570]: [76-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 55828 buffers (5.3%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=4.389 s, sync=0.396 s, total=4.798 s; sync files=50, longest=0.014 s, average=0.007 s; distance=414722 kB, estimate=414722 kB
+2015-08-27 22:55:35 EDT [3570]: [77-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (8 seconds apart)
+2015-08-27 22:55:35 EDT [3570]: [78-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 22:55:35 EDT [3570]: [79-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 22:55:39 EDT [3570]: [80-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 55341 buffers (5.3%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=3.449 s, sync=0.597 s, total=4.060 s; sync files=50, longest=0.024 s, average=0.011 s; distance=411777 kB, estimate=414427 kB
+2015-08-27 22:55:42 EDT [3570]: [81-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (7 seconds apart)
+2015-08-27 22:55:42 EDT [3570]: [82-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 22:55:42 EDT [3570]: [83-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 22:55:46 EDT [3570]: [84-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 55101 buffers (5.3%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=3.350 s, sync=0.600 s, total=3.964 s; sync files=50, longest=0.024 s, average=0.012 s; distance=410018 kB, estimate=413986 kB
+2015-08-27 22:55:49 EDT [3570]: [85-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (7 seconds apart)
+2015-08-27 22:55:49 EDT [3570]: [86-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 22:55:49 EDT [3570]: [87-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 22:56:08 EDT [3570]: [88-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 53729 buffers (5.1%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=18.939 s, sync=0.304 s, total=19.285 s; sync files=54, longest=0.043 s, average=0.005 s; distance=399391 kB, estimate=412527 kB
+2015-08-27 22:58:18 EDT [4131]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp4131.0", size 471609680
+2015-08-27 22:58:18 EDT [4131]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		100.00 * sum(case
+			when p_type like 'PROMO%'
+				then l_extendedprice * (1 - l_discount)
+			else 0
+		end) / sum(l_extendedprice * (1 - l_discount)) as promo_revenue
+	from
+		lineitem,
+		part
+	where
+		l_partkey = p_partkey
+		and l_shipdate >= date '1995-07-01'
+		and l_shipdate < cast(date '1995-07-01' + interval '1 month' as date);
+2015-08-27 22:58:23 EDT [4131]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp4131.1", size 123805120
+2015-08-27 22:58:23 EDT [4131]: [4-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		100.00 * sum(case
+			when p_type like 'PROMO%'
+				then l_extendedprice * (1 - l_discount)
+			else 0
+		end) / sum(l_extendedprice * (1 - l_discount)) as promo_revenue
+	from
+		lineitem,
+		part
+	where
+		l_partkey = p_partkey
+		and l_shipdate >= date '1995-07-01'
+		and l_shipdate < cast(date '1995-07-01' + interval '1 month' as date);
+2015-08-27 23:00:29 EDT [3921]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.1", size 525072492
+2015-08-27 23:00:29 EDT [3921]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:00:50 EDT [3570]: [89-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 23:00:56 EDT [3570]: [90-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 59 buffers (0.0%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=5.931 s, sync=0.154 s, total=6.090 s; sync files=89, longest=0.041 s, average=0.001 s; distance=300646 kB, estimate=401339 kB
+2015-08-27 23:01:09 EDT [3921]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.32", size 26733056
+2015-08-27 23:01:09 EDT [3921]: [4-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:01:12 EDT [3921]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.5", size 524782888
+2015-08-27 23:01:12 EDT [3921]: [6-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:01:25 EDT [4433]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp4433.0", size 619274240
+2015-08-27 23:01:25 EDT [4433]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		p_brand,
+		p_type,
+		p_size,
+		count(distinct ps_suppkey) as supplier_cnt
+	from
+		partsupp,
+		part
+	where
+		p_partkey = ps_partkey
+		and p_brand <> 'Brand#12'
+		and p_type not like 'LARGE BURNISHED%'
+		and p_size in (1, 25, 29, 3, 7, 5, 14, 38)
+		and ps_suppkey not in (
+			select
+				s_suppkey
+			from
+				supplier
+			where
+				s_comment like '%Customer%Complaints%'
+		)
+	group by
+		p_brand,
+		p_type,
+		p_size
+	order by
+		supplier_cnt desc,
+		p_brand,
+		p_type,
+		p_size;
+2015-08-27 23:01:29 EDT [3921]: [7-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.31", size 26650288
+2015-08-27 23:01:29 EDT [3921]: [8-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:01:32 EDT [3921]: [9-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.18", size 524851432
+2015-08-27 23:01:32 EDT [3921]: [10-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:01:46 EDT [3921]: [11-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.47", size 26678120
+2015-08-27 23:01:46 EDT [3921]: [12-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:01:49 EDT [3921]: [13-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.24", size 525329140
+2015-08-27 23:01:49 EDT [3921]: [14-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:01:53 EDT [3570]: [91-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 23:02:00 EDT [3570]: [92-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 40863 buffers (3.9%); 0 transaction log file(s) added, 18 removed, 0 recycled; write=6.514 s, sync=0.633 s, total=7.155 s; sync files=61, longest=0.025 s, average=0.010 s; distance=406583 kB, estimate=406583 kB
+2015-08-27 23:02:04 EDT [3921]: [15-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.55", size 26671400
+2015-08-27 23:02:04 EDT [3921]: [16-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:02:07 EDT [3921]: [17-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.27", size 524963768
+2015-08-27 23:02:07 EDT [3921]: [18-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:02:09 EDT [3570]: [93-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (16 seconds apart)
+2015-08-27 23:02:09 EDT [3570]: [94-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 23:02:09 EDT [3570]: [95-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 23:02:17 EDT [3570]: [96-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 44455 buffers (4.2%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=7.646 s, sync=0.671 s, total=8.326 s; sync files=51, longest=0.030 s, average=0.013 s; distance=409756 kB, estimate=409756 kB
+2015-08-27 23:02:24 EDT [3570]: [97-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (15 seconds apart)
+2015-08-27 23:02:24 EDT [3570]: [98-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 23:02:24 EDT [3570]: [99-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 23:02:27 EDT [3570]: [100-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 15841 buffers (1.5%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=2.796 s, sync=0.686 s, total=3.489 s; sync files=51, longest=0.033 s, average=0.013 s; distance=412658 kB, estimate=412658 kB
+2015-08-27 23:02:28 EDT [3921]: [19-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.58", size 26690608
+2015-08-27 23:02:28 EDT [3921]: [20-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:02:32 EDT [3921]: [21-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.17", size 525285348
+2015-08-27 23:02:32 EDT [3921]: [22-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:02:37 EDT [3570]: [101-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (13 seconds apart)
+2015-08-27 23:02:37 EDT [3570]: [102-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 23:02:37 EDT [3570]: [103-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 23:02:45 EDT [3570]: [104-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 26767 buffers (2.6%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=7.454 s, sync=0.604 s, total=8.067 s; sync files=50, longest=0.028 s, average=0.012 s; distance=407797 kB, estimate=412172 kB
+2015-08-27 23:02:53 EDT [3570]: [105-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (16 seconds apart)
+2015-08-27 23:02:53 EDT [3570]: [106-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 23:02:53 EDT [3570]: [107-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 23:02:57 EDT [3921]: [23-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.35", size 26688872
+2015-08-27 23:02:57 EDT [3921]: [24-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:02:58 EDT [3570]: [108-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 13071 buffers (1.2%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=4.306 s, sync=0.694 s, total=5.011 s; sync files=51, longest=0.079 s, average=0.013 s; distance=405554 kB, estimate=411510 kB
+2015-08-27 23:02:59 EDT [3921]: [25-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.0", size 524821556
+2015-08-27 23:02:59 EDT [3921]: [26-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:03:12 EDT [3570]: [109-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (19 seconds apart)
+2015-08-27 23:03:12 EDT [3570]: [110-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 23:03:12 EDT [3570]: [111-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 23:03:18 EDT [3570]: [112-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 14680 buffers (1.4%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=4.873 s, sync=0.913 s, total=5.796 s; sync files=50, longest=0.039 s, average=0.018 s; distance=413814 kB, estimate=413814 kB
+2015-08-27 23:03:31 EDT [3570]: [113-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (19 seconds apart)
+2015-08-27 23:03:31 EDT [3570]: [114-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 23:03:31 EDT [3570]: [115-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 23:03:37 EDT [3570]: [116-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 14644 buffers (1.4%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=5.481 s, sync=0.832 s, total=6.322 s; sync files=50, longest=0.036 s, average=0.016 s; distance=406230 kB, estimate=413056 kB
+2015-08-27 23:03:48 EDT [3921]: [27-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.54", size 26595856
+2015-08-27 23:03:48 EDT [3921]: [28-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:03:50 EDT [3570]: [117-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (19 seconds apart)
+2015-08-27 23:03:50 EDT [3570]: [118-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 23:03:50 EDT [3570]: [119-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 23:03:51 EDT [3921]: [29-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.21", size 525299180
+2015-08-27 23:03:51 EDT [3921]: [30-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:03:56 EDT [3570]: [120-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 12155 buffers (1.2%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=5.581 s, sync=0.246 s, total=5.832 s; sync files=50, longest=0.017 s, average=0.004 s; distance=409773 kB, estimate=412728 kB
+2015-08-27 23:04:10 EDT [3570]: [121-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (20 seconds apart)
+2015-08-27 23:04:10 EDT [3570]: [122-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 23:04:10 EDT [3570]: [123-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 23:04:17 EDT [3570]: [124-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 14390 buffers (1.4%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=5.565 s, sync=0.939 s, total=6.526 s; sync files=50, longest=0.041 s, average=0.018 s; distance=411503 kB, estimate=412605 kB
+2015-08-27 23:04:29 EDT [3570]: [125-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (19 seconds apart)
+2015-08-27 23:04:29 EDT [3570]: [126-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 23:04:29 EDT [3570]: [127-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 23:04:34 EDT [3921]: [31-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.61", size 26650456
+2015-08-27 23:04:34 EDT [3921]: [32-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:04:35 EDT [3570]: [128-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 13956 buffers (1.3%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=4.809 s, sync=0.902 s, total=5.725 s; sync files=50, longest=0.150 s, average=0.018 s; distance=408438 kB, estimate=412189 kB
+2015-08-27 23:04:36 EDT [3921]: [33-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.22", size 525213220
+2015-08-27 23:04:36 EDT [3921]: [34-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:04:43 EDT [4771]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp4771.1", size 632962520
+2015-08-27 23:04:43 EDT [4771]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_custkey,
+		c_name,
+		sum(l_extendedprice * (1 - l_discount)) as revenue,
+		c_acctbal,
+		n_name,
+		c_address,
+		c_phone,
+		c_comment
+	from
+		customer,
+		orders,
+		lineitem,
+		nation
+	where
+		c_custkey = o_custkey
+		and l_orderkey = o_orderkey
+		and o_orderdate >= date '1993-02-01'
+		and o_orderdate < cast(date '1993-02-01' + interval '3 month' as date)
+		and l_returnflag = 'R'
+		and c_nationkey = n_nationkey
+	group by
+		c_custkey,
+		c_name,
+		c_acctbal,
+		c_phone,
+		n_name,
+		c_address,
+		c_comment
+	order by
+		revenue desc
+	LIMIT 20;
+2015-08-27 23:04:47 EDT [3570]: [129-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (18 seconds apart)
+2015-08-27 23:04:47 EDT [3570]: [130-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 23:04:47 EDT [3570]: [131-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 23:04:52 EDT [4771]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp4771.3", size 88692288
+2015-08-27 23:04:52 EDT [4771]: [4-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_custkey,
+		c_name,
+		sum(l_extendedprice * (1 - l_discount)) as revenue,
+		c_acctbal,
+		n_name,
+		c_address,
+		c_phone,
+		c_comment
+	from
+		customer,
+		orders,
+		lineitem,
+		nation
+	where
+		c_custkey = o_custkey
+		and l_orderkey = o_orderkey
+		and o_orderdate >= date '1993-02-01'
+		and o_orderdate < cast(date '1993-02-01' + interval '3 month' as date)
+		and l_returnflag = 'R'
+		and c_nationkey = n_nationkey
+	group by
+		c_custkey,
+		c_name,
+		c_acctbal,
+		c_phone,
+		n_name,
+		c_address,
+		c_comment
+	order by
+		revenue desc
+	LIMIT 20;
+2015-08-27 23:04:53 EDT [4771]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp4771.2", size 633498216
+2015-08-27 23:04:53 EDT [4771]: [6-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_custkey,
+		c_name,
+		sum(l_extendedprice * (1 - l_discount)) as revenue,
+		c_acctbal,
+		n_name,
+		c_address,
+		c_phone,
+		c_comment
+	from
+		customer,
+		orders,
+		lineitem,
+		nation
+	where
+		c_custkey = o_custkey
+		and l_orderkey = o_orderkey
+		and o_orderdate >= date '1993-02-01'
+		and o_orderdate < cast(date '1993-02-01' + interval '3 month' as date)
+		and l_returnflag = 'R'
+		and c_nationkey = n_nationkey
+	group by
+		c_custkey,
+		c_name,
+		c_acctbal,
+		c_phone,
+		n_name,
+		c_address,
+		c_comment
+	order by
+		revenue desc
+	LIMIT 20;
+2015-08-27 23:04:55 EDT [3570]: [132-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 44246 buffers (4.2%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=6.853 s, sync=0.583 s, total=7.448 s; sync files=50, longest=0.028 s, average=0.011 s; distance=409535 kB, estimate=411923 kB
+2015-08-27 23:05:01 EDT [3570]: [133-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (14 seconds apart)
+2015-08-27 23:05:01 EDT [3570]: [134-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 23:05:01 EDT [3570]: [135-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 23:05:03 EDT [4771]: [7-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp4771.5", size 88672320
+2015-08-27 23:05:03 EDT [4771]: [8-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_custkey,
+		c_name,
+		sum(l_extendedprice * (1 - l_discount)) as revenue,
+		c_acctbal,
+		n_name,
+		c_address,
+		c_phone,
+		c_comment
+	from
+		customer,
+		orders,
+		lineitem,
+		nation
+	where
+		c_custkey = o_custkey
+		and l_orderkey = o_orderkey
+		and o_orderdate >= date '1993-02-01'
+		and o_orderdate < cast(date '1993-02-01' + interval '3 month' as date)
+		and l_returnflag = 'R'
+		and c_nationkey = n_nationkey
+	group by
+		c_custkey,
+		c_name,
+		c_acctbal,
+		c_phone,
+		n_name,
+		c_address,
+		c_comment
+	order by
+		revenue desc
+	LIMIT 20;
+2015-08-27 23:05:04 EDT [4771]: [9-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp4771.0", size 633389660
+2015-08-27 23:05:04 EDT [4771]: [10-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_custkey,
+		c_name,
+		sum(l_extendedprice * (1 - l_discount)) as revenue,
+		c_acctbal,
+		n_name,
+		c_address,
+		c_phone,
+		c_comment
+	from
+		customer,
+		orders,
+		lineitem,
+		nation
+	where
+		c_custkey = o_custkey
+		and l_orderkey = o_orderkey
+		and o_orderdate >= date '1993-02-01'
+		and o_orderdate < cast(date '1993-02-01' + interval '3 month' as date)
+		and l_returnflag = 'R'
+		and c_nationkey = n_nationkey
+	group by
+		c_custkey,
+		c_name,
+		c_acctbal,
+		c_phone,
+		n_name,
+		c_address,
+		c_comment
+	order by
+		revenue desc
+	LIMIT 20;
+2015-08-27 23:05:08 EDT [3570]: [136-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 55040 buffers (5.2%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=6.649 s, sync=0.582 s, total=7.240 s; sync files=50, longest=0.023 s, average=0.011 s; distance=409008 kB, estimate=411632 kB
+2015-08-27 23:05:14 EDT [3570]: [137-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (13 seconds apart)
+2015-08-27 23:05:14 EDT [3570]: [138-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 23:05:14 EDT [3570]: [139-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 23:05:14 EDT [4771]: [11-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp4771.4", size 88493664
+2015-08-27 23:05:14 EDT [4771]: [12-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_custkey,
+		c_name,
+		sum(l_extendedprice * (1 - l_discount)) as revenue,
+		c_acctbal,
+		n_name,
+		c_address,
+		c_phone,
+		c_comment
+	from
+		customer,
+		orders,
+		lineitem,
+		nation
+	where
+		c_custkey = o_custkey
+		and l_orderkey = o_orderkey
+		and o_orderdate >= date '1993-02-01'
+		and o_orderdate < cast(date '1993-02-01' + interval '3 month' as date)
+		and l_returnflag = 'R'
+		and c_nationkey = n_nationkey
+	group by
+		c_custkey,
+		c_name,
+		c_acctbal,
+		c_phone,
+		n_name,
+		c_address,
+		c_comment
+	order by
+		revenue desc
+	LIMIT 20;
+2015-08-27 23:05:21 EDT [3921]: [35-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.44", size 26664176
+2015-08-27 23:05:21 EDT [3921]: [36-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:05:21 EDT [3570]: [140-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 55721 buffers (5.3%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=6.673 s, sync=0.671 s, total=7.354 s; sync files=50, longest=0.042 s, average=0.013 s; distance=414518 kB, estimate=414518 kB
+2015-08-27 23:05:24 EDT [3921]: [37-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.30", size 524983480
+2015-08-27 23:05:24 EDT [3921]: [38-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:05:26 EDT [3570]: [141-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (12 seconds apart)
+2015-08-27 23:05:26 EDT [3570]: [142-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 23:05:26 EDT [3570]: [143-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 23:05:33 EDT [3570]: [144-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 54430 buffers (5.2%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=5.921 s, sync=0.212 s, total=6.142 s; sync files=50, longest=0.008 s, average=0.004 s; distance=405109 kB, estimate=413578 kB
+2015-08-27 23:05:37 EDT [4771]: [13-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp4771.6", size 1073741824
+2015-08-27 23:05:37 EDT [4771]: [14-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_custkey,
+		c_name,
+		sum(l_extendedprice * (1 - l_discount)) as revenue,
+		c_acctbal,
+		n_name,
+		c_address,
+		c_phone,
+		c_comment
+	from
+		customer,
+		orders,
+		lineitem,
+		nation
+	where
+		c_custkey = o_custkey
+		and l_orderkey = o_orderkey
+		and o_orderdate >= date '1993-02-01'
+		and o_orderdate < cast(date '1993-02-01' + interval '3 month' as date)
+		and l_returnflag = 'R'
+		and c_nationkey = n_nationkey
+	group by
+		c_custkey,
+		c_name,
+		c_acctbal,
+		c_phone,
+		n_name,
+		c_address,
+		c_comment
+	order by
+		revenue desc
+	LIMIT 20;
+2015-08-27 23:05:37 EDT [4771]: [15-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp4771.7", size 1026187264
+2015-08-27 23:05:37 EDT [4771]: [16-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_custkey,
+		c_name,
+		sum(l_extendedprice * (1 - l_discount)) as revenue,
+		c_acctbal,
+		n_name,
+		c_address,
+		c_phone,
+		c_comment
+	from
+		customer,
+		orders,
+		lineitem,
+		nation
+	where
+		c_custkey = o_custkey
+		and l_orderkey = o_orderkey
+		and o_orderdate >= date '1993-02-01'
+		and o_orderdate < cast(date '1993-02-01' + interval '3 month' as date)
+		and l_returnflag = 'R'
+		and c_nationkey = n_nationkey
+	group by
+		c_custkey,
+		c_name,
+		c_acctbal,
+		c_phone,
+		n_name,
+		c_address,
+		c_comment
+	order by
+		revenue desc
+	LIMIT 20;
+2015-08-27 23:05:38 EDT [3570]: [145-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (12 seconds apart)
+2015-08-27 23:05:38 EDT [3570]: [146-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 23:05:38 EDT [3570]: [147-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 23:05:45 EDT [3570]: [148-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 54822 buffers (5.2%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=6.561 s, sync=0.883 s, total=7.455 s; sync files=51, longest=0.037 s, average=0.017 s; distance=408035 kB, estimate=413023 kB
+2015-08-27 23:05:53 EDT [3570]: [149-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (15 seconds apart)
+2015-08-27 23:05:53 EDT [3570]: [150-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 23:05:53 EDT [3570]: [151-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 23:06:02 EDT [3570]: [152-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 55735 buffers (5.3%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=7.997 s, sync=0.707 s, total=8.716 s; sync files=50, longest=0.053 s, average=0.014 s; distance=414363 kB, estimate=414363 kB
+2015-08-27 23:06:09 EDT [3570]: [153-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (16 seconds apart)
+2015-08-27 23:06:09 EDT [3570]: [154-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 23:06:09 EDT [3570]: [155-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 23:06:17 EDT [3570]: [156-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 55054 buffers (5.3%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=6.694 s, sync=0.631 s, total=7.336 s; sync files=50, longest=0.025 s, average=0.012 s; distance=409747 kB, estimate=413901 kB
+2015-08-27 23:06:19 EDT [3921]: [39-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.42", size 26656952
+2015-08-27 23:06:19 EDT [3921]: [40-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:06:22 EDT [3570]: [157-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (13 seconds apart)
+2015-08-27 23:06:22 EDT [3570]: [158-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 23:06:22 EDT [3570]: [159-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 23:06:22 EDT [3921]: [41-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.14", size 524964300
+2015-08-27 23:06:22 EDT [3921]: [42-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:06:27 EDT [3570]: [160-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 54378 buffers (5.2%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=4.831 s, sync=0.583 s, total=5.426 s; sync files=50, longest=0.028 s, average=0.011 s; distance=404484 kB, estimate=412959 kB
+2015-08-27 23:06:31 EDT [3570]: [161-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (9 seconds apart)
+2015-08-27 23:06:31 EDT [3570]: [162-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 23:06:31 EDT [3570]: [163-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 23:06:37 EDT [3570]: [164-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 55227 buffers (5.3%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=4.746 s, sync=0.571 s, total=5.333 s; sync files=50, longest=0.023 s, average=0.011 s; distance=410643 kB, estimate=412728 kB
+2015-08-27 23:06:42 EDT [3570]: [165-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (11 seconds apart)
+2015-08-27 23:06:42 EDT [3570]: [166-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 23:06:42 EDT [3570]: [167-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 23:06:48 EDT [3570]: [168-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 56054 buffers (5.3%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=5.084 s, sync=0.714 s, total=5.803 s; sync files=51, longest=0.071 s, average=0.013 s; distance=415646 kB, estimate=415646 kB
+2015-08-27 23:06:52 EDT [3570]: [169-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (10 seconds apart)
+2015-08-27 23:06:52 EDT [3570]: [170-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 23:06:52 EDT [3570]: [171-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 23:06:58 EDT [3570]: [172-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 54899 buffers (5.2%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=5.017 s, sync=0.627 s, total=5.655 s; sync files=50, longest=0.030 s, average=0.012 s; distance=408216 kB, estimate=414903 kB
+2015-08-27 23:07:03 EDT [3570]: [173-1] user=,db=,app=,client= LOG:  checkpoints are occurring too frequently (11 seconds apart)
+2015-08-27 23:07:03 EDT [3570]: [174-1] user=,db=,app=,client= HINT:  Consider increasing the configuration parameter "max_wal_size".
+2015-08-27 23:07:03 EDT [3570]: [175-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-27 23:07:10 EDT [3921]: [43-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.60", size 26680136
+2015-08-27 23:07:10 EDT [3921]: [44-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:07:13 EDT [3921]: [45-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.20", size 524743772
+2015-08-27 23:07:13 EDT [3921]: [46-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:07:42 EDT [3570]: [176-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 42461 buffers (4.0%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=38.622 s, sync=0.254 s, total=38.886 s; sync files=59, longest=0.010 s, average=0.004 s; distance=406898 kB, estimate=414102 kB
+2015-08-27 23:07:51 EDT [3921]: [47-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.59", size 26614952
+2015-08-27 23:07:51 EDT [3921]: [48-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:07:53 EDT [3921]: [49-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.15", size 525279384
+2015-08-27 23:07:53 EDT [3921]: [50-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:08:22 EDT [3921]: [51-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.57", size 26712056
+2015-08-27 23:08:22 EDT [3921]: [52-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:08:25 EDT [3921]: [53-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.6", size 524892256
+2015-08-27 23:08:25 EDT [3921]: [54-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:08:29 EDT [3921]: [55-1] user=mark,db=dbt3,app=psql,client=[local] ERROR:  canceling statement due to statement timeout
+2015-08-27 23:08:29 EDT [3921]: [56-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'VIETNAM'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-27 23:08:29 EDT [3921]: [57-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.56", size 26722304
+2015-08-27 23:08:29 EDT [3921]: [58-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.53", size 26705920
+2015-08-27 23:08:29 EDT [3921]: [59-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.52", size 26664960
+2015-08-27 23:08:29 EDT [3921]: [60-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.51", size 26738688
+2015-08-27 23:08:29 EDT [3921]: [61-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.50", size 26664960
+2015-08-27 23:08:29 EDT [3921]: [62-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.49", size 26664960
+2015-08-27 23:08:29 EDT [3921]: [63-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.48", size 26697728
+2015-08-27 23:08:29 EDT [3921]: [64-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.46", size 26648576
+2015-08-27 23:08:29 EDT [3921]: [65-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.45", size 26632192
+2015-08-27 23:08:29 EDT [3921]: [66-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.43", size 26648576
+2015-08-27 23:08:29 EDT [3921]: [67-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.41", size 26624000
+2015-08-27 23:08:29 EDT [3921]: [68-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.40", size 26664960
+2015-08-27 23:08:29 EDT [3921]: [69-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.39", size 26656768
+2015-08-27 23:08:29 EDT [3921]: [70-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.38", size 26615808
+2015-08-27 23:08:29 EDT [3921]: [71-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.37", size 26600392
+2015-08-27 23:08:29 EDT [3921]: [72-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.36", size 26681344
+2015-08-27 23:08:29 EDT [3921]: [73-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.34", size 26607616
+2015-08-27 23:08:29 EDT [3921]: [74-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.33", size 26697728
+2015-08-27 23:08:29 EDT [3921]: [75-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.29", size 524992512
+2015-08-27 23:08:29 EDT [3921]: [76-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.28", size 525271040
+2015-08-27 23:08:29 EDT [3921]: [77-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.26", size 525099008
+2015-08-27 23:08:29 EDT [3921]: [78-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.25", size 525156352
+2015-08-27 23:08:29 EDT [3921]: [79-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.23", size 524992512
+2015-08-27 23:08:29 EDT [3921]: [80-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.19", size 525197312
+2015-08-27 23:08:29 EDT [3921]: [81-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.16", size 525230080
+2015-08-27 23:08:29 EDT [3921]: [82-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.13", size 524763136
+2015-08-27 23:08:29 EDT [3921]: [83-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.12", size 525049856
+2015-08-27 23:08:29 EDT [3921]: [84-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.11", size 525066240
+2015-08-27 23:08:29 EDT [3921]: [85-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.10", size 524812288
+2015-08-27 23:08:29 EDT [3921]: [86-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.9", size 525115392
+2015-08-27 23:08:29 EDT [3921]: [87-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.8", size 525033472
+2015-08-27 23:08:29 EDT [3921]: [88-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.7", size 525000704
+2015-08-27 23:08:29 EDT [3921]: [89-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.4", size 525066240
+2015-08-27 23:08:29 EDT [3921]: [90-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.3", size 524615680
+2015-08-27 23:08:29 EDT [3921]: [91-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp3921.2", size 525148160
+2015-08-27 23:12:03 EDT [3570]: [177-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 23:12:26 EDT [3570]: [178-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 1675 buffers (0.2%); 0 transaction log file(s) added, 25 removed, 0 recycled; write=23.377 s, sync=0.106 s, total=23.488 s; sync files=50, longest=0.066 s, average=0.002 s; distance=308382 kB, estimate=403530 kB
+2015-08-27 23:16:50 EDT [5023]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp5023.0", size 1073741824
+2015-08-27 23:16:50 EDT [5023]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		nation,
+		o_year,
+		sum(amount) as sum_profit
+	from
+		(
+			select
+				n_name as nation,
+				extract(year from o_orderdate) as o_year,
+				l_extendedprice * (1 - l_discount) - ps_supplycost * l_quantity as amount
+			from
+				part,
+				supplier,
+				lineitem,
+				partsupp,
+				orders,
+				nation
+			where
+				s_suppkey = l_suppkey
+				and ps_suppkey = l_suppkey
+				and ps_partkey = l_partkey
+				and p_partkey = l_partkey
+				and o_orderkey = l_orderkey
+				and s_nationkey = n_nationkey
+				and p_name like '%midnight%'
+		) as profit
+	group by
+		nation,
+		o_year
+	order by
+		nation,
+		o_year desc;
+2015-08-27 23:16:50 EDT [5023]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp5023.1", size 1073741824
+2015-08-27 23:16:50 EDT [5023]: [4-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		nation,
+		o_year,
+		sum(amount) as sum_profit
+	from
+		(
+			select
+				n_name as nation,
+				extract(year from o_orderdate) as o_year,
+				l_extendedprice * (1 - l_discount) - ps_supplycost * l_quantity as amount
+			from
+				part,
+				supplier,
+				lineitem,
+				partsupp,
+				orders,
+				nation
+			where
+				s_suppkey = l_suppkey
+				and ps_suppkey = l_suppkey
+				and ps_partkey = l_partkey
+				and p_partkey = l_partkey
+				and o_orderkey = l_orderkey
+				and s_nationkey = n_nationkey
+				and p_name like '%midnight%'
+		) as profit
+	group by
+		nation,
+		o_year
+	order by
+		nation,
+		o_year desc;
+2015-08-27 23:16:50 EDT [5023]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp5023.2", size 7208960
+2015-08-27 23:16:50 EDT [5023]: [6-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		nation,
+		o_year,
+		sum(amount) as sum_profit
+	from
+		(
+			select
+				n_name as nation,
+				extract(year from o_orderdate) as o_year,
+				l_extendedprice * (1 - l_discount) - ps_supplycost * l_quantity as amount
+			from
+				part,
+				supplier,
+				lineitem,
+				partsupp,
+				orders,
+				nation
+			where
+				s_suppkey = l_suppkey
+				and ps_suppkey = l_suppkey
+				and ps_partkey = l_partkey
+				and p_partkey = l_partkey
+				and o_orderkey = l_orderkey
+				and s_nationkey = n_nationkey
+				and p_name like '%midnight%'
+		) as profit
+	group by
+		nation,
+		o_year
+	order by
+		nation,
+		o_year desc;
+2015-08-27 23:17:03 EDT [3570]: [179-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 23:17:04 EDT [3570]: [180-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 transaction log file(s) added, 19 removed, 0 recycled; write=0.417 s, sync=0.012 s, total=0.433 s; sync files=17, longest=0.002 s, average=0.000 s; distance=107 kB, estimate=363188 kB
+2015-08-27 23:18:41 EDT [5854]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp5854.0", size 1073741824
+2015-08-27 23:18:41 EDT [5854]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_acctbal,
+		s_name,
+		n_name,
+		p_partkey,
+		p_mfgr,
+		s_address,
+		s_phone,
+		s_comment
+	from
+		part,
+		supplier,
+		partsupp,
+		nation,
+		region
+	where
+		p_partkey = ps_partkey
+		and s_suppkey = ps_suppkey
+		and p_size = 46
+		and p_type like '%BRASS'
+		and s_nationkey = n_nationkey
+		and n_regionkey = r_regionkey
+		and r_name = 'AMERICA'
+		and ps_supplycost = (
+			select
+				min(ps_supplycost)
+			from
+				partsupp,
+				supplier,
+				nation,
+				region
+			where
+				p_partkey = ps_partkey
+				and s_suppkey = ps_suppkey
+				and s_nationkey = n_nationkey
+				and n_regionkey = r_regionkey
+				and r_name = 'AMERICA'
+		)
+	order by
+		s_acctbal desc,
+		n_name,
+		s_name,
+		p_partkey
+	LIMIT 100;
+2015-08-27 23:18:41 EDT [5854]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp5854.1", size 1073741824
+2015-08-27 23:18:41 EDT [5854]: [4-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_acctbal,
+		s_name,
+		n_name,
+		p_partkey,
+		p_mfgr,
+		s_address,
+		s_phone,
+		s_comment
+	from
+		part,
+		supplier,
+		partsupp,
+		nation,
+		region
+	where
+		p_partkey = ps_partkey
+		and s_suppkey = ps_suppkey
+		and p_size = 46
+		and p_type like '%BRASS'
+		and s_nationkey = n_nationkey
+		and n_regionkey = r_regionkey
+		and r_name = 'AMERICA'
+		and ps_supplycost = (
+			select
+				min(ps_supplycost)
+			from
+				partsupp,
+				supplier,
+				nation,
+				region
+			where
+				p_partkey = ps_partkey
+				and s_suppkey = ps_suppkey
+				and s_nationkey = n_nationkey
+				and n_regionkey = r_regionkey
+				and r_name = 'AMERICA'
+		)
+	order by
+		s_acctbal desc,
+		n_name,
+		s_name,
+		p_partkey
+	LIMIT 100;
+2015-08-27 23:18:42 EDT [5854]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp5854.2", size 747167744
+2015-08-27 23:18:42 EDT [5854]: [6-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_acctbal,
+		s_name,
+		n_name,
+		p_partkey,
+		p_mfgr,
+		s_address,
+		s_phone,
+		s_comment
+	from
+		part,
+		supplier,
+		partsupp,
+		nation,
+		region
+	where
+		p_partkey = ps_partkey
+		and s_suppkey = ps_suppkey
+		and p_size = 46
+		and p_type like '%BRASS'
+		and s_nationkey = n_nationkey
+		and n_regionkey = r_regionkey
+		and r_name = 'AMERICA'
+		and ps_supplycost = (
+			select
+				min(ps_supplycost)
+			from
+				partsupp,
+				supplier,
+				nation,
+				region
+			where
+				p_partkey = ps_partkey
+				and s_suppkey = ps_suppkey
+				and s_nationkey = n_nationkey
+				and n_regionkey = r_regionkey
+				and r_name = 'AMERICA'
+		)
+	order by
+		s_acctbal desc,
+		n_name,
+		s_name,
+		p_partkey
+	LIMIT 100;
+2015-08-27 23:22:03 EDT [3570]: [181-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 23:22:03 EDT [3570]: [182-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.216 s, sync=0.005 s, total=0.223 s; sync files=19, longest=0.000 s, average=0.000 s; distance=2899 kB, estimate=327159 kB
+2015-08-27 23:27:03 EDT [3570]: [183-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 23:27:03 EDT [3570]: [184-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.000 s, total=0.014 s; sync files=1, longest=0.000 s, average=0.000 s; distance=5 kB, estimate=294444 kB
+2015-08-27 23:32:03 EDT [3570]: [185-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 23:32:09 EDT [3570]: [186-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 61 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=6.032 s, sync=0.005 s, total=6.040 s; sync files=8, longest=0.001 s, average=0.000 s; distance=1297 kB, estimate=265129 kB
+2015-08-27 23:37:03 EDT [3570]: [187-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 23:37:03 EDT [3570]: [188-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.012 s, sync=0.010 s, total=0.026 s; sync files=25, longest=0.001 s, average=0.000 s; distance=9 kB, estimate=238617 kB
+2015-08-27 23:38:47 EDT [7404]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp7404.2", size 449932056
+2015-08-27 23:38:47 EDT [7404]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('23', '12', '11', '16', '29', '18', '31')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('23', '12', '11', '16', '29', '18', '31')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-27 23:38:47 EDT [7404]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp7404.8", size 10498488
+2015-08-27 23:38:47 EDT [7404]: [4-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('23', '12', '11', '16', '29', '18', '31')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('23', '12', '11', '16', '29', '18', '31')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-27 23:38:50 EDT [7404]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp7404.3", size 449576928
+2015-08-27 23:38:50 EDT [7404]: [6-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('23', '12', '11', '16', '29', '18', '31')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('23', '12', '11', '16', '29', '18', '31')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-27 23:38:50 EDT [7404]: [7-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp7404.12", size 10473804
+2015-08-27 23:38:50 EDT [7404]: [8-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('23', '12', '11', '16', '29', '18', '31')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('23', '12', '11', '16', '29', '18', '31')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-27 23:38:54 EDT [7404]: [9-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp7404.6", size 450197304
+2015-08-27 23:38:54 EDT [7404]: [10-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('23', '12', '11', '16', '29', '18', '31')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('23', '12', '11', '16', '29', '18', '31')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-27 23:38:54 EDT [7404]: [11-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp7404.9", size 10516220
+2015-08-27 23:38:54 EDT [7404]: [12-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('23', '12', '11', '16', '29', '18', '31')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('23', '12', '11', '16', '29', '18', '31')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-27 23:38:57 EDT [7404]: [13-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp7404.5", size 449788728
+2015-08-27 23:38:57 EDT [7404]: [14-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('23', '12', '11', '16', '29', '18', '31')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('23', '12', '11', '16', '29', '18', '31')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-27 23:38:58 EDT [7404]: [15-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp7404.10", size 10501040
+2015-08-27 23:38:58 EDT [7404]: [16-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('23', '12', '11', '16', '29', '18', '31')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('23', '12', '11', '16', '29', '18', '31')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-27 23:39:01 EDT [7404]: [17-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp7404.4", size 450494352
+2015-08-27 23:39:01 EDT [7404]: [18-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('23', '12', '11', '16', '29', '18', '31')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('23', '12', '11', '16', '29', '18', '31')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-27 23:39:01 EDT [7404]: [19-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp7404.11", size 10525548
+2015-08-27 23:39:01 EDT [7404]: [20-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('23', '12', '11', '16', '29', '18', '31')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('23', '12', '11', '16', '29', '18', '31')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-27 23:39:05 EDT [7404]: [21-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp7404.1", size 450146328
+2015-08-27 23:39:05 EDT [7404]: [22-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('23', '12', '11', '16', '29', '18', '31')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('23', '12', '11', '16', '29', '18', '31')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-27 23:39:05 EDT [7404]: [23-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp7404.13", size 10475300
+2015-08-27 23:39:05 EDT [7404]: [24-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('23', '12', '11', '16', '29', '18', '31')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('23', '12', '11', '16', '29', '18', '31')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-27 23:39:08 EDT [7404]: [25-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp7404.0", size 449949264
+2015-08-27 23:39:08 EDT [7404]: [26-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('23', '12', '11', '16', '29', '18', '31')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('23', '12', '11', '16', '29', '18', '31')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-27 23:39:09 EDT [7404]: [27-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp7404.7", size 10485772
+2015-08-27 23:39:09 EDT [7404]: [28-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('23', '12', '11', '16', '29', '18', '31')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('23', '12', '11', '16', '29', '18', '31')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-27 23:42:04 EDT [3570]: [189-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 23:42:13 EDT [3570]: [190-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 101 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=9.445 s, sync=0.092 s, total=9.540 s; sync files=28, longest=0.012 s, average=0.003 s; distance=7 kB, estimate=214756 kB
+2015-08-27 23:47:04 EDT [3570]: [191-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 23:47:04 EDT [3570]: [192-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.001 s, total=0.015 s; sync files=5, longest=0.000 s, average=0.000 s; distance=37 kB, estimate=193284 kB
+2015-08-27 23:47:08 EDT [7952]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp7952.0", size 619503616
+2015-08-27 23:47:08 EDT [7952]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		p_brand,
+		p_type,
+		p_size,
+		count(distinct ps_suppkey) as supplier_cnt
+	from
+		partsupp,
+		part
+	where
+		p_partkey = ps_partkey
+		and p_brand <> 'Brand#22'
+		and p_type not like 'SMALL ANODIZED%'
+		and p_size in (48, 4, 44, 1, 10, 14, 35, 34)
+		and ps_suppkey not in (
+			select
+				s_suppkey
+			from
+				supplier
+			where
+				s_comment like '%Customer%Complaints%'
+		)
+	group by
+		p_brand,
+		p_type,
+		p_size
+	order by
+		supplier_cnt desc,
+		p_brand,
+		p_type,
+		p_size;
+2015-08-27 23:52:04 EDT [3570]: [193-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 23:52:05 EDT [3570]: [194-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.718 s, sync=0.013 s, total=0.734 s; sync files=18, longest=0.007 s, average=0.000 s; distance=105 kB, estimate=173966 kB
+2015-08-27 23:56:15 EDT [8295]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp8295.0", size 1073741824
+2015-08-27 23:56:15 EDT [8295]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_count,
+		count(*) as custdist
+	from
+		(
+			select
+				c_custkey,
+				count(o_orderkey)
+			from
+				customer left outer join orders on
+					c_custkey = o_custkey
+					and o_comment not like '%express%accounts%'
+			group by
+				c_custkey
+		) as c_orders (c_custkey, c_count)
+	group by
+		c_count
+	order by
+		custdist desc,
+		c_count desc;
+2015-08-27 23:56:16 EDT [8295]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp8295.1", size 1073741824
+2015-08-27 23:56:16 EDT [8295]: [4-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_count,
+		count(*) as custdist
+	from
+		(
+			select
+				c_custkey,
+				count(o_orderkey)
+			from
+				customer left outer join orders on
+					c_custkey = o_custkey
+					and o_comment not like '%express%accounts%'
+			group by
+				c_custkey
+		) as c_orders (c_custkey, c_count)
+	group by
+		c_count
+	order by
+		custdist desc,
+		c_count desc;
+2015-08-27 23:56:16 EDT [8295]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp8295.2", size 526041088
+2015-08-27 23:56:16 EDT [8295]: [6-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_count,
+		count(*) as custdist
+	from
+		(
+			select
+				c_custkey,
+				count(o_orderkey)
+			from
+				customer left outer join orders on
+					c_custkey = o_custkey
+					and o_comment not like '%express%accounts%'
+			group by
+				c_custkey
+		) as c_orders (c_custkey, c_count)
+	group by
+		c_count
+	order by
+		custdist desc,
+		c_count desc;
+2015-08-27 23:57:04 EDT [3570]: [195-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 23:57:05 EDT [3570]: [196-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 16 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.618 s, sync=0.027 s, total=0.647 s; sync files=3, longest=0.015 s, average=0.009 s; distance=7 kB, estimate=156570 kB
+2015-08-27 23:57:11 EDT [8393]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp8393.0", size 1073741824
+2015-08-27 23:57:11 EDT [8393]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_count,
+		count(*) as custdist
+	from
+		(
+			select
+				c_custkey,
+				count(o_orderkey)
+			from
+				customer left outer join orders on
+					c_custkey = o_custkey
+					and o_comment not like '%unusual%requests%'
+			group by
+				c_custkey
+		) as c_orders (c_custkey, c_count)
+	group by
+		c_count
+	order by
+		custdist desc,
+		c_count desc;
+2015-08-27 23:57:11 EDT [8393]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp8393.1", size 1073741824
+2015-08-27 23:57:11 EDT [8393]: [4-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_count,
+		count(*) as custdist
+	from
+		(
+			select
+				c_custkey,
+				count(o_orderkey)
+			from
+				customer left outer join orders on
+					c_custkey = o_custkey
+					and o_comment not like '%unusual%requests%'
+			group by
+				c_custkey
+		) as c_orders (c_custkey, c_count)
+	group by
+		c_count
+	order by
+		custdist desc,
+		c_count desc;
+2015-08-27 23:57:11 EDT [8393]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp8393.2", size 526032896
+2015-08-27 23:57:11 EDT [8393]: [6-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_count,
+		count(*) as custdist
+	from
+		(
+			select
+				c_custkey,
+				count(o_orderkey)
+			from
+				customer left outer join orders on
+					c_custkey = o_custkey
+					and o_comment not like '%unusual%requests%'
+			group by
+				c_custkey
+		) as c_orders (c_custkey, c_count)
+	group by
+		c_count
+	order by
+		custdist desc,
+		c_count desc;
+2015-08-27 23:59:54 EDT [8896]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp8896.1", size 632962520
+2015-08-27 23:59:54 EDT [8896]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_custkey,
+		c_name,
+		sum(l_extendedprice * (1 - l_discount)) as revenue,
+		c_acctbal,
+		n_name,
+		c_address,
+		c_phone,
+		c_comment
+	from
+		customer,
+		orders,
+		lineitem,
+		nation
+	where
+		c_custkey = o_custkey
+		and l_orderkey = o_orderkey
+		and o_orderdate >= date '1994-05-01'
+		and o_orderdate < cast(date '1994-05-01' + interval '3 month' as date)
+		and l_returnflag = 'R'
+		and c_nationkey = n_nationkey
+	group by
+		c_custkey,
+		c_name,
+		c_acctbal,
+		c_phone,
+		n_name,
+		c_address,
+		c_comment
+	order by
+		revenue desc
+	LIMIT 20;
+2015-08-28 00:00:03 EDT [8896]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp8896.4", size 91506976
+2015-08-28 00:00:03 EDT [8896]: [4-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_custkey,
+		c_name,
+		sum(l_extendedprice * (1 - l_discount)) as revenue,
+		c_acctbal,
+		n_name,
+		c_address,
+		c_phone,
+		c_comment
+	from
+		customer,
+		orders,
+		lineitem,
+		nation
+	where
+		c_custkey = o_custkey
+		and l_orderkey = o_orderkey
+		and o_orderdate >= date '1994-05-01'
+		and o_orderdate < cast(date '1994-05-01' + interval '3 month' as date)
+		and l_returnflag = 'R'
+		and c_nationkey = n_nationkey
+	group by
+		c_custkey,
+		c_name,
+		c_acctbal,
+		c_phone,
+		n_name,
+		c_address,
+		c_comment
+	order by
+		revenue desc
+	LIMIT 20;
+2015-08-28 00:00:04 EDT [8896]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp8896.2", size 633498216
+2015-08-28 00:00:04 EDT [8896]: [6-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_custkey,
+		c_name,
+		sum(l_extendedprice * (1 - l_discount)) as revenue,
+		c_acctbal,
+		n_name,
+		c_address,
+		c_phone,
+		c_comment
+	from
+		customer,
+		orders,
+		lineitem,
+		nation
+	where
+		c_custkey = o_custkey
+		and l_orderkey = o_orderkey
+		and o_orderdate >= date '1994-05-01'
+		and o_orderdate < cast(date '1994-05-01' + interval '3 month' as date)
+		and l_returnflag = 'R'
+		and c_nationkey = n_nationkey
+	group by
+		c_custkey,
+		c_name,
+		c_acctbal,
+		c_phone,
+		n_name,
+		c_address,
+		c_comment
+	order by
+		revenue desc
+	LIMIT 20;
+2015-08-28 00:00:13 EDT [8896]: [7-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp8896.5", size 91842592
+2015-08-28 00:00:13 EDT [8896]: [8-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_custkey,
+		c_name,
+		sum(l_extendedprice * (1 - l_discount)) as revenue,
+		c_acctbal,
+		n_name,
+		c_address,
+		c_phone,
+		c_comment
+	from
+		customer,
+		orders,
+		lineitem,
+		nation
+	where
+		c_custkey = o_custkey
+		and l_orderkey = o_orderkey
+		and o_orderdate >= date '1994-05-01'
+		and o_orderdate < cast(date '1994-05-01' + interval '3 month' as date)
+		and l_returnflag = 'R'
+		and c_nationkey = n_nationkey
+	group by
+		c_custkey,
+		c_name,
+		c_acctbal,
+		c_phone,
+		n_name,
+		c_address,
+		c_comment
+	order by
+		revenue desc
+	LIMIT 20;
+2015-08-28 00:00:14 EDT [8896]: [9-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp8896.0", size 633389660
+2015-08-28 00:00:14 EDT [8896]: [10-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_custkey,
+		c_name,
+		sum(l_extendedprice * (1 - l_discount)) as revenue,
+		c_acctbal,
+		n_name,
+		c_address,
+		c_phone,
+		c_comment
+	from
+		customer,
+		orders,
+		lineitem,
+		nation
+	where
+		c_custkey = o_custkey
+		and l_orderkey = o_orderkey
+		and o_orderdate >= date '1994-05-01'
+		and o_orderdate < cast(date '1994-05-01' + interval '3 month' as date)
+		and l_returnflag = 'R'
+		and c_nationkey = n_nationkey
+	group by
+		c_custkey,
+		c_name,
+		c_acctbal,
+		c_phone,
+		n_name,
+		c_address,
+		c_comment
+	order by
+		revenue desc
+	LIMIT 20;
+2015-08-28 00:00:23 EDT [8896]: [11-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp8896.3", size 91650848
+2015-08-28 00:00:23 EDT [8896]: [12-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_custkey,
+		c_name,
+		sum(l_extendedprice * (1 - l_discount)) as revenue,
+		c_acctbal,
+		n_name,
+		c_address,
+		c_phone,
+		c_comment
+	from
+		customer,
+		orders,
+		lineitem,
+		nation
+	where
+		c_custkey = o_custkey
+		and l_orderkey = o_orderkey
+		and o_orderdate >= date '1994-05-01'
+		and o_orderdate < cast(date '1994-05-01' + interval '3 month' as date)
+		and l_returnflag = 'R'
+		and c_nationkey = n_nationkey
+	group by
+		c_custkey,
+		c_name,
+		c_acctbal,
+		c_phone,
+		n_name,
+		c_address,
+		c_comment
+	order by
+		revenue desc
+	LIMIT 20;
+2015-08-28 00:00:44 EDT [8896]: [13-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp8896.6", size 1073741824
+2015-08-28 00:00:44 EDT [8896]: [14-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_custkey,
+		c_name,
+		sum(l_extendedprice * (1 - l_discount)) as revenue,
+		c_acctbal,
+		n_name,
+		c_address,
+		c_phone,
+		c_comment
+	from
+		customer,
+		orders,
+		lineitem,
+		nation
+	where
+		c_custkey = o_custkey
+		and l_orderkey = o_orderkey
+		and o_orderdate >= date '1994-05-01'
+		and o_orderdate < cast(date '1994-05-01' + interval '3 month' as date)
+		and l_returnflag = 'R'
+		and c_nationkey = n_nationkey
+	group by
+		c_custkey,
+		c_name,
+		c_acctbal,
+		c_phone,
+		n_name,
+		c_address,
+		c_comment
+	order by
+		revenue desc
+	LIMIT 20;
+2015-08-28 00:00:45 EDT [8896]: [15-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp8896.7", size 1073741824
+2015-08-28 00:00:45 EDT [8896]: [16-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_custkey,
+		c_name,
+		sum(l_extendedprice * (1 - l_discount)) as revenue,
+		c_acctbal,
+		n_name,
+		c_address,
+		c_phone,
+		c_comment
+	from
+		customer,
+		orders,
+		lineitem,
+		nation
+	where
+		c_custkey = o_custkey
+		and l_orderkey = o_orderkey
+		and o_orderdate >= date '1994-05-01'
+		and o_orderdate < cast(date '1994-05-01' + interval '3 month' as date)
+		and l_returnflag = 'R'
+		and c_nationkey = n_nationkey
+	group by
+		c_custkey,
+		c_name,
+		c_acctbal,
+		c_phone,
+		n_name,
+		c_address,
+		c_comment
+	order by
+		revenue desc
+	LIMIT 20;
+2015-08-28 00:00:45 EDT [8896]: [17-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp8896.8", size 24715264
+2015-08-28 00:00:45 EDT [8896]: [18-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		c_custkey,
+		c_name,
+		sum(l_extendedprice * (1 - l_discount)) as revenue,
+		c_acctbal,
+		n_name,
+		c_address,
+		c_phone,
+		c_comment
+	from
+		customer,
+		orders,
+		lineitem,
+		nation
+	where
+		c_custkey = o_custkey
+		and l_orderkey = o_orderkey
+		and o_orderdate >= date '1994-05-01'
+		and o_orderdate < cast(date '1994-05-01' + interval '3 month' as date)
+		and l_returnflag = 'R'
+		and c_nationkey = n_nationkey
+	group by
+		c_custkey,
+		c_name,
+		c_acctbal,
+		c_phone,
+		n_name,
+		c_address,
+		c_comment
+	order by
+		revenue desc
+	LIMIT 20;
+2015-08-28 00:02:04 EDT [3570]: [197-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-28 00:02:04 EDT [3570]: [198-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.002 s, total=0.025 s; sync files=3, longest=0.002 s, average=0.000 s; distance=4 kB, estimate=140914 kB
+2015-08-28 00:02:35 EDT [9143]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp9143.0", size 1073741824
+2015-08-28 00:02:35 EDT [9143]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_acctbal,
+		s_name,
+		n_name,
+		p_partkey,
+		p_mfgr,
+		s_address,
+		s_phone,
+		s_comment
+	from
+		part,
+		supplier,
+		partsupp,
+		nation,
+		region
+	where
+		p_partkey = ps_partkey
+		and s_suppkey = ps_suppkey
+		and p_size = 8
+		and p_type like '%COPPER'
+		and s_nationkey = n_nationkey
+		and n_regionkey = r_regionkey
+		and r_name = 'EUROPE'
+		and ps_supplycost = (
+			select
+				min(ps_supplycost)
+			from
+				partsupp,
+				supplier,
+				nation,
+				region
+			where
+				p_partkey = ps_partkey
+				and s_suppkey = ps_suppkey
+				and s_nationkey = n_nationkey
+				and n_regionkey = r_regionkey
+				and r_name = 'EUROPE'
+		)
+	order by
+		s_acctbal desc,
+		n_name,
+		s_name,
+		p_partkey
+	LIMIT 100;
+2015-08-28 00:02:35 EDT [9143]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp9143.1", size 1073741824
+2015-08-28 00:02:35 EDT [9143]: [4-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_acctbal,
+		s_name,
+		n_name,
+		p_partkey,
+		p_mfgr,
+		s_address,
+		s_phone,
+		s_comment
+	from
+		part,
+		supplier,
+		partsupp,
+		nation,
+		region
+	where
+		p_partkey = ps_partkey
+		and s_suppkey = ps_suppkey
+		and p_size = 8
+		and p_type like '%COPPER'
+		and s_nationkey = n_nationkey
+		and n_regionkey = r_regionkey
+		and r_name = 'EUROPE'
+		and ps_supplycost = (
+			select
+				min(ps_supplycost)
+			from
+				partsupp,
+				supplier,
+				nation,
+				region
+			where
+				p_partkey = ps_partkey
+				and s_suppkey = ps_suppkey
+				and s_nationkey = n_nationkey
+				and n_regionkey = r_regionkey
+				and r_name = 'EUROPE'
+		)
+	order by
+		s_acctbal desc,
+		n_name,
+		s_name,
+		p_partkey
+	LIMIT 100;
+2015-08-28 00:02:35 EDT [9143]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp9143.2", size 758005760
+2015-08-28 00:02:35 EDT [9143]: [6-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_acctbal,
+		s_name,
+		n_name,
+		p_partkey,
+		p_mfgr,
+		s_address,
+		s_phone,
+		s_comment
+	from
+		part,
+		supplier,
+		partsupp,
+		nation,
+		region
+	where
+		p_partkey = ps_partkey
+		and s_suppkey = ps_suppkey
+		and p_size = 8
+		and p_type like '%COPPER'
+		and s_nationkey = n_nationkey
+		and n_regionkey = r_regionkey
+		and r_name = 'EUROPE'
+		and ps_supplycost = (
+			select
+				min(ps_supplycost)
+			from
+				partsupp,
+				supplier,
+				nation,
+				region
+			where
+				p_partkey = ps_partkey
+				and s_suppkey = ps_suppkey
+				and s_nationkey = n_nationkey
+				and n_regionkey = r_regionkey
+				and r_name = 'EUROPE'
+		)
+	order by
+		s_acctbal desc,
+		n_name,
+		s_name,
+		p_partkey
+	LIMIT 100;
+2015-08-28 00:07:04 EDT [3570]: [199-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-28 00:08:10 EDT [3570]: [200-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 1893 buffers (0.2%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=65.896 s, sync=0.020 s, total=65.918 s; sync files=12, longest=0.005 s, average=0.001 s; distance=5 kB, estimate=126823 kB
+2015-08-28 00:10:56 EDT [9748]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp9748.0", size 471609680
+2015-08-28 00:10:56 EDT [9748]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		100.00 * sum(case
+			when p_type like 'PROMO%'
+				then l_extendedprice * (1 - l_discount)
+			else 0
+		end) / sum(l_extendedprice * (1 - l_discount)) as promo_revenue
+	from
+		lineitem,
+		part
+	where
+		l_partkey = p_partkey
+		and l_shipdate >= date '1995-04-01'
+		and l_shipdate < cast(date '1995-04-01' + interval '1 month' as date);
+2015-08-28 00:10:59 EDT [9748]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp9748.1", size 119750400
+2015-08-28 00:10:59 EDT [9748]: [4-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		100.00 * sum(case
+			when p_type like 'PROMO%'
+				then l_extendedprice * (1 - l_discount)
+			else 0
+		end) / sum(l_extendedprice * (1 - l_discount)) as promo_revenue
+	from
+		lineitem,
+		part
+	where
+		l_partkey = p_partkey
+		and l_shipdate >= date '1995-04-01'
+		and l_shipdate < cast(date '1995-04-01' + interval '1 month' as date);
+2015-08-28 00:12:04 EDT [3570]: [201-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-28 00:12:54 EDT [3570]: [202-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 500 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=49.941 s, sync=0.022 s, total=49.965 s; sync files=24, longest=0.010 s, average=0.000 s; distance=5 kB, estimate=114141 kB
+2015-08-28 00:17:04 EDT [3570]: [203-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-28 00:17:04 EDT [3570]: [204-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.000 s, total=0.013 s; sync files=1, longest=0.000 s, average=0.000 s; distance=5 kB, estimate=102727 kB
+2015-08-28 00:22:04 EDT [3570]: [205-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-28 00:22:31 EDT [9962]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp9962.0", size 1073741824
+2015-08-28 00:22:31 EDT [9962]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		nation,
+		o_year,
+		sum(amount) as sum_profit
+	from
+		(
+			select
+				n_name as nation,
+				extract(year from o_orderdate) as o_year,
+				l_extendedprice * (1 - l_discount) - ps_supplycost * l_quantity as amount
+			from
+				part,
+				supplier,
+				lineitem,
+				partsupp,
+				orders,
+				nation
+			where
+				s_suppkey = l_suppkey
+				and ps_suppkey = l_suppkey
+				and ps_partkey = l_partkey
+				and p_partkey = l_partkey
+				and o_orderkey = l_orderkey
+				and s_nationkey = n_nationkey
+				and p_name like '%olive%'
+		) as profit
+	group by
+		nation,
+		o_year
+	order by
+		nation,
+		o_year desc;
+2015-08-28 00:22:32 EDT [9962]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp9962.1", size 1073741824
+2015-08-28 00:22:32 EDT [9962]: [4-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		nation,
+		o_year,
+		sum(amount) as sum_profit
+	from
+		(
+			select
+				n_name as nation,
+				extract(year from o_orderdate) as o_year,
+				l_extendedprice * (1 - l_discount) - ps_supplycost * l_quantity as amount
+			from
+				part,
+				supplier,
+				lineitem,
+				partsupp,
+				orders,
+				nation
+			where
+				s_suppkey = l_suppkey
+				and ps_suppkey = l_suppkey
+				and ps_partkey = l_partkey
+				and p_partkey = l_partkey
+				and o_orderkey = l_orderkey
+				and s_nationkey = n_nationkey
+				and p_name like '%olive%'
+		) as profit
+	group by
+		nation,
+		o_year
+	order by
+		nation,
+		o_year desc;
+2015-08-28 00:22:32 EDT [9962]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp9962.2", size 5971968
+2015-08-28 00:22:32 EDT [9962]: [6-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		nation,
+		o_year,
+		sum(amount) as sum_profit
+	from
+		(
+			select
+				n_name as nation,
+				extract(year from o_orderdate) as o_year,
+				l_extendedprice * (1 - l_discount) - ps_supplycost * l_quantity as amount
+			from
+				part,
+				supplier,
+				lineitem,
+				partsupp,
+				orders,
+				nation
+			where
+				s_suppkey = l_suppkey
+				and ps_suppkey = l_suppkey
+				and ps_partkey = l_partkey
+				and p_partkey = l_partkey
+				and o_orderkey = l_orderkey
+				and s_nationkey = n_nationkey
+				and p_name like '%olive%'
+		) as profit
+	group by
+		nation,
+		o_year
+	order by
+		nation,
+		o_year desc;
+2015-08-28 00:22:39 EDT [3570]: [206-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 817 buffers (0.1%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=34.915 s, sync=0.011 s, total=34.929 s; sync files=18, longest=0.006 s, average=0.000 s; distance=5 kB, estimate=92455 kB
+2015-08-28 00:24:10 EDT [10769]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp10769.4", size 449932056
+2015-08-28 00:24:10 EDT [10769]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('33', '14', '16', '27', '13', '25', '23')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('33', '14', '16', '27', '13', '25', '23')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-28 00:24:11 EDT [10769]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp10769.10", size 10498224
+2015-08-28 00:24:11 EDT [10769]: [4-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('33', '14', '16', '27', '13', '25', '23')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('33', '14', '16', '27', '13', '25', '23')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-28 00:24:14 EDT [10769]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp10769.1", size 449576928
+2015-08-28 00:24:14 EDT [10769]: [6-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('33', '14', '16', '27', '13', '25', '23')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('33', '14', '16', '27', '13', '25', '23')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-28 00:24:14 EDT [10769]: [7-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp10769.7", size 10504384
+2015-08-28 00:24:14 EDT [10769]: [8-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('33', '14', '16', '27', '13', '25', '23')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('33', '14', '16', '27', '13', '25', '23')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-28 00:24:18 EDT [10769]: [9-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp10769.3", size 450197304
+2015-08-28 00:24:18 EDT [10769]: [10-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('33', '14', '16', '27', '13', '25', '23')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('33', '14', '16', '27', '13', '25', '23')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-28 00:24:18 EDT [10769]: [11-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp10769.13", size 10520488
+2015-08-28 00:24:18 EDT [10769]: [12-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('33', '14', '16', '27', '13', '25', '23')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('33', '14', '16', '27', '13', '25', '23')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-28 00:24:21 EDT [10769]: [13-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp10769.0", size 449788728
+2015-08-28 00:24:21 EDT [10769]: [14-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('33', '14', '16', '27', '13', '25', '23')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('33', '14', '16', '27', '13', '25', '23')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-28 00:24:21 EDT [10769]: [15-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp10769.9", size 10500512
+2015-08-28 00:24:21 EDT [10769]: [16-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('33', '14', '16', '27', '13', '25', '23')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('33', '14', '16', '27', '13', '25', '23')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-28 00:24:25 EDT [10769]: [17-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp10769.2", size 450494352
+2015-08-28 00:24:25 EDT [10769]: [18-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('33', '14', '16', '27', '13', '25', '23')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('33', '14', '16', '27', '13', '25', '23')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-28 00:24:25 EDT [10769]: [19-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp10769.11", size 10497872
+2015-08-28 00:24:25 EDT [10769]: [20-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('33', '14', '16', '27', '13', '25', '23')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('33', '14', '16', '27', '13', '25', '23')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-28 00:24:28 EDT [10769]: [21-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp10769.5", size 450146328
+2015-08-28 00:24:28 EDT [10769]: [22-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('33', '14', '16', '27', '13', '25', '23')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('33', '14', '16', '27', '13', '25', '23')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-28 00:24:28 EDT [10769]: [23-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp10769.12", size 10548164
+2015-08-28 00:24:28 EDT [10769]: [24-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('33', '14', '16', '27', '13', '25', '23')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('33', '14', '16', '27', '13', '25', '23')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-28 00:24:32 EDT [10769]: [25-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp10769.6", size 449949264
+2015-08-28 00:24:32 EDT [10769]: [26-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('33', '14', '16', '27', '13', '25', '23')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('33', '14', '16', '27', '13', '25', '23')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-28 00:24:32 EDT [10769]: [27-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp10769.8", size 10472352
+2015-08-28 00:24:32 EDT [10769]: [28-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		cntrycode,
+		count(*) as numcust,
+		sum(c_acctbal) as totacctbal
+	from
+		(
+			select
+				substr(c_phone, 1, 2) as cntrycode,
+				c_acctbal
+			from
+				customer
+			where
+				substr(c_phone, 1, 2) in
+					('33', '14', '16', '27', '13', '25', '23')
+				and c_acctbal > (
+					select
+						avg(c_acctbal)
+					from
+						customer
+					where
+						c_acctbal > 0.00
+						and substr(c_phone, 1, 2) in
+							('33', '14', '16', '27', '13', '25', '23')
+				)
+				and not exists (
+					select
+						*
+					from
+						orders
+					where
+						o_custkey = c_custkey
+				)
+		) as vip
+	group by
+		cntrycode
+	order by
+		cntrycode;
+2015-08-28 00:27:04 EDT [3570]: [207-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-28 00:27:15 EDT [3570]: [208-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 109 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=10.443 s, sync=0.027 s, total=10.474 s; sync files=8, longest=0.011 s, average=0.003 s; distance=6 kB, estimate=83210 kB
+2015-08-28 00:32:04 EDT [3570]: [209-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-28 00:32:14 EDT [3570]: [210-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 100 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=10.040 s, sync=0.038 s, total=10.083 s; sync files=3, longest=0.022 s, average=0.012 s; distance=6 kB, estimate=74890 kB
+2015-08-28 00:35:39 EDT [11160]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.30", size 525052108
+2015-08-28 00:35:39 EDT [11160]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:36:13 EDT [11160]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.35", size 26478424
+2015-08-28 00:36:13 EDT [11160]: [4-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:36:15 EDT [11160]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.19", size 524778408
+2015-08-28 00:36:15 EDT [11160]: [6-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:36:33 EDT [11160]: [7-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.46", size 26446896
+2015-08-28 00:36:33 EDT [11160]: [8-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:36:35 EDT [11160]: [9-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.11", size 524851600
+2015-08-28 00:36:35 EDT [11160]: [10-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:36:46 EDT [11160]: [11-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.33", size 26492928
+2015-08-28 00:36:46 EDT [11160]: [12-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:36:49 EDT [11160]: [13-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.16", size 525301504
+2015-08-28 00:36:49 EDT [11160]: [14-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:37:03 EDT [11160]: [15-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.52", size 26441520
+2015-08-28 00:37:03 EDT [11160]: [16-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:37:04 EDT [3570]: [211-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-28 00:37:04 EDT [3570]: [212-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.001 s, total=0.014 s; sync files=1, longest=0.001 s, average=0.001 s; distance=6 kB, estimate=67401 kB
+2015-08-28 00:37:05 EDT [11160]: [17-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.2", size 524952288
+2015-08-28 00:37:05 EDT [11160]: [18-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:37:18 EDT [11160]: [19-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.42", size 26422424
+2015-08-28 00:37:18 EDT [11160]: [20-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:37:21 EDT [11160]: [21-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.12", size 525304640
+2015-08-28 00:37:21 EDT [11160]: [22-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:37:34 EDT [11160]: [23-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.56", size 26512024
+2015-08-28 00:37:34 EDT [11160]: [24-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:37:36 EDT [11160]: [25-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.29", size 524816124
+2015-08-28 00:37:36 EDT [11160]: [26-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:37:47 EDT [11160]: [27-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.34", size 26373256
+2015-08-28 00:37:47 EDT [11160]: [28-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:37:49 EDT [11160]: [29-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.1", size 525317744
+2015-08-28 00:37:49 EDT [11160]: [30-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:38:01 EDT [11160]: [31-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.55", size 26452552
+2015-08-28 00:38:01 EDT [11160]: [32-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:38:03 EDT [11160]: [33-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.20", size 525214704
+2015-08-28 00:38:03 EDT [11160]: [34-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:38:17 EDT [11160]: [35-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.50", size 26407640
+2015-08-28 00:38:17 EDT [11160]: [36-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:38:19 EDT [11160]: [37-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.17", size 524979812
+2015-08-28 00:38:19 EDT [11160]: [38-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:38:29 EDT [11160]: [39-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.53", size 26425504
+2015-08-28 00:38:29 EDT [11160]: [40-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:38:31 EDT [11160]: [41-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.0", size 524992216
+2015-08-28 00:38:31 EDT [11160]: [42-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:38:41 EDT [11160]: [43-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.37", size 26403608
+2015-08-28 00:38:41 EDT [11160]: [44-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:38:43 EDT [11160]: [45-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.13", size 524752480
+2015-08-28 00:38:43 EDT [11160]: [46-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:38:53 EDT [11160]: [47-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.48", size 26392688
+2015-08-28 00:38:53 EDT [11160]: [48-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:38:55 EDT [11160]: [49-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.26", size 525276808
+2015-08-28 00:38:55 EDT [11160]: [50-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:39:04 EDT [11160]: [51-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.40", size 26442808
+2015-08-28 00:39:04 EDT [11160]: [52-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:39:06 EDT [11160]: [53-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.3", size 524877248
+2015-08-28 00:39:06 EDT [11160]: [54-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:39:15 EDT [11160]: [55-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.57", size 26398792
+2015-08-28 00:39:15 EDT [11160]: [56-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:39:17 EDT [11160]: [57-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.28", size 525235452
+2015-08-28 00:39:17 EDT [11160]: [58-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:39:27 EDT [11160]: [59-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.59", size 26464088
+2015-08-28 00:39:27 EDT [11160]: [60-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:39:29 EDT [11160]: [61-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.5", size 525053060
+2015-08-28 00:39:29 EDT [11160]: [62-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:39:38 EDT [11160]: [63-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.45", size 26430936
+2015-08-28 00:39:38 EDT [11160]: [64-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:39:40 EDT [11160]: [65-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.6", size 525126812
+2015-08-28 00:39:40 EDT [11160]: [66-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:39:49 EDT [11160]: [67-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.47", size 26415984
+2015-08-28 00:39:49 EDT [11160]: [68-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:39:51 EDT [11160]: [69-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.14", size 524827604
+2015-08-28 00:39:51 EDT [11160]: [70-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:40:00 EDT [11160]: [71-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.61", size 26473048
+2015-08-28 00:40:00 EDT [11160]: [72-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:40:02 EDT [11160]: [73-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.21", size 524757100
+2015-08-28 00:40:02 EDT [11160]: [74-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:40:11 EDT [11160]: [75-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.58", size 26454904
+2015-08-28 00:40:11 EDT [11160]: [76-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:40:13 EDT [11160]: [77-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.25", size 525027496
+2015-08-28 00:40:13 EDT [11160]: [78-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:40:22 EDT [11160]: [79-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.44", size 26436480
+2015-08-28 00:40:22 EDT [11160]: [80-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:40:24 EDT [11160]: [81-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.9", size 525047684
+2015-08-28 00:40:24 EDT [11160]: [82-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:40:33 EDT [11160]: [83-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.31", size 26384288
+2015-08-28 00:40:33 EDT [11160]: [84-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:40:35 EDT [11160]: [85-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.24", size 525301308
+2015-08-28 00:40:35 EDT [11160]: [86-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:40:45 EDT [11160]: [87-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.49", size 26444208
+2015-08-28 00:40:45 EDT [11160]: [88-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:40:47 EDT [11160]: [89-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.18", size 524986280
+2015-08-28 00:40:47 EDT [11160]: [90-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:40:56 EDT [11160]: [91-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.36", size 26461568
+2015-08-28 00:40:56 EDT [11160]: [92-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:40:58 EDT [11160]: [93-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.10", size 524624940
+2015-08-28 00:40:58 EDT [11160]: [94-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:41:07 EDT [11160]: [95-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.43", size 26437544
+2015-08-28 00:41:07 EDT [11160]: [96-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:41:09 EDT [11160]: [97-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.22", size 525106176
+2015-08-28 00:41:09 EDT [11160]: [98-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:41:18 EDT [11160]: [99-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.51", size 26459832
+2015-08-28 00:41:18 EDT [11160]: [100-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:41:20 EDT [11160]: [101-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.15", size 525003220
+2015-08-28 00:41:20 EDT [11160]: [102-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:41:29 EDT [11160]: [103-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.60", size 26441464
+2015-08-28 00:41:29 EDT [11160]: [104-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:41:31 EDT [11160]: [105-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.27", size 525061852
+2015-08-28 00:41:31 EDT [11160]: [106-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:41:40 EDT [11160]: [107-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.41", size 26482456
+2015-08-28 00:41:40 EDT [11160]: [108-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:41:42 EDT [11160]: [109-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.8", size 525062356
+2015-08-28 00:41:42 EDT [11160]: [110-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:41:51 EDT [11160]: [111-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.39", size 26375272
+2015-08-28 00:41:51 EDT [11160]: [112-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:41:53 EDT [11160]: [113-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.4", size 525193284
+2015-08-28 00:41:53 EDT [11160]: [114-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:42:02 EDT [11160]: [115-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.32", size 26378520
+2015-08-28 00:42:02 EDT [11160]: [116-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:42:04 EDT [3570]: [213-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-28 00:42:04 EDT [3570]: [214-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.000 s, total=0.014 s; sync files=1, longest=0.000 s, average=0.000 s; distance=6 kB, estimate=60662 kB
+2015-08-28 00:42:05 EDT [11160]: [117-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.7", size 525183064
+2015-08-28 00:42:05 EDT [11160]: [118-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:42:13 EDT [11160]: [119-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.38", size 26469408
+2015-08-28 00:42:13 EDT [11160]: [120-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:42:16 EDT [11160]: [121-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.23", size 525142128
+2015-08-28 00:42:16 EDT [11160]: [122-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:42:25 EDT [11160]: [123-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp11160.54", size 26394984
+2015-08-28 00:42:25 EDT [11160]: [124-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  select
+		s_name,
+		count(*) as numwait
+	from
+		supplier,
+		lineitem l1,
+		orders,
+		nation
+	where
+		s_suppkey = l1.l_suppkey
+		and o_orderkey = l1.l_orderkey
+		and o_orderstatus = 'F'
+		and l1.l_receiptdate > l1.l_commitdate
+		and exists (
+			select
+				*
+			from
+				lineitem l2
+			where
+				l2.l_orderkey = l1.l_orderkey
+				and l2.l_suppkey <> l1.l_suppkey
+		)
+		and not exists (
+			select
+				*
+			from
+				lineitem l3
+			where
+				l3.l_orderkey = l1.l_orderkey
+				and l3.l_suppkey <> l1.l_suppkey
+				and l3.l_receiptdate > l3.l_commitdate
+		)
+		and s_nationkey = n_nationkey
+		and n_name = 'JORDAN'
+	group by
+		s_name
+	order by
+		numwait desc,
+		s_name
+	LIMIT 100;
+2015-08-28 00:42:25 EDT [3568]: [2-1] user=,db=,app=,client= LOG:  received fast shutdown request
+2015-08-28 00:42:25 EDT [3568]: [3-1] user=,db=,app=,client= LOG:  aborting any active transactions
+2015-08-28 00:42:25 EDT [3573]: [2-1] user=,db=,app=,client= LOG:  autovacuum launcher shutting down
+2015-08-28 00:42:25 EDT [3570]: [215-1] user=,db=,app=,client= LOG:  shutting down
+2015-08-28 00:42:25 EDT [3570]: [216-1] user=,db=,app=,client= LOG:  checkpoint starting: shutdown immediate
+2015-08-28 00:42:25 EDT [3570]: [217-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.016 s, sync=0.000 s, total=0.019 s; sync files=1, longest=0.000 s, average=0.000 s; distance=6 kB, estimate=54596 kB
+2015-08-28 00:42:25 EDT [3570]: [218-1] user=,db=,app=,client= LOG:  database system is shut down

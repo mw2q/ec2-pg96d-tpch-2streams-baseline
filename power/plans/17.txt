@@ -1,0 +1,38 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	sum(l_extendedprice) / 7.0 as avg_yearly
+from
+	lineitem,
+	part
+where
+	p_partkey = l_partkey
+	and p_brand = 'Brand#24'
+	and p_container = 'WRAP BAG'
+	and l_quantity < (
+		select
+			0.2 * avg(l_quantity)
+		from
+			lineitem
+		where
+			l_partkey = p_partkey
+	);
+                                                                       QUERY PLAN                                                                       
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregate  (cost=1063587.07..1063587.08 rows=1 width=4)
+   ->  Nested Loop  (cost=699.91..1063085.66 rows=200563 width=4)
+         ->  Bitmap Heap Scan on part  (cost=694.13..66375.77 rows=20055 width=4)
+               Recheck Cond: ((p_container = 'WRAP BAG'::bpchar) AND (p_brand = 'Brand#24'::bpchar))
+               ->  Bitmap Index Scan on part_p_container_p_brand_p_partkey_idx  (cost=0.00..689.11 rows=20055 width=0)
+                     Index Cond: ((p_container = 'WRAP BAG'::bpchar) AND (p_brand = 'Brand#24'::bpchar))
+         ->  Index Scan using lineitem_l_partkey_l_quantity_l_shipmode_idx on lineitem  (cost=5.79..49.60 rows=10 width=12)
+               Index Cond: ((l_partkey = part.p_partkey) AND (l_quantity < (SubPlan 1)))
+               SubPlan 1
+                 ->  Aggregate  (cost=5.20..5.21 rows=1 width=4)
+                       ->  Index Only Scan using lineitem_l_partkey_l_quantity_l_shipmode_idx on lineitem lineitem_1  (cost=0.57..5.12 rows=31 width=4)
+                             Index Cond: (l_partkey = part.p_partkey)
+(12 rows)
+
+COMMIT;
+COMMIT

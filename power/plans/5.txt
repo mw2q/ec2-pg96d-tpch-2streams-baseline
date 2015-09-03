@@ -1,0 +1,62 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	n_name,
+	sum(l_extendedprice * (1 - l_discount)) as revenue
+from
+	customer,
+	orders,
+	lineitem,
+	supplier,
+	nation,
+	region
+where
+	c_custkey = o_custkey
+	and l_orderkey = o_orderkey
+	and l_suppkey = s_suppkey
+	and c_nationkey = s_nationkey
+	and s_nationkey = n_nationkey
+	and n_regionkey = r_regionkey
+	and r_name = 'EUROPE'
+	and o_orderdate >= date '1993-01-01'
+	and o_orderdate < date '1993-01-01' + interval '1 year'
+group by
+	n_name
+order by
+	revenue desc;
+                                                                              QUERY PLAN                                                                              
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=26515964.43..26515964.49 rows=25 width=34)
+   Sort Key: (sum((lineitem.l_extendedprice * ('1'::double precision - lineitem.l_discount)))) DESC
+   ->  HashAggregate  (cost=26515963.60..26515963.85 rows=25 width=34)
+         Group Key: nation.n_name
+         ->  Hash Join  (cost=4274939.90..26508681.54 rows=728206 width=34)
+               Hash Cond: ((lineitem.l_suppkey = supplier.s_suppkey) AND (customer.c_nationkey = supplier.s_nationkey))
+               ->  Hash Join  (cost=4228143.90..26318064.66 rows=18205176 width=46)
+                     Hash Cond: (lineitem.l_orderkey = orders.o_orderkey)
+                     ->  Seq Scan on lineitem  (cost=0.00..16657541.40 rows=600037440 width=16)
+                     ->  Hash  (cost=4171256.28..4171256.28 rows=4551010 width=38)
+                           ->  Hash Join  (cost=1109328.36..4171256.28 rows=4551010 width=38)
+                                 Hash Cond: (orders.o_custkey = customer.c_custkey)
+                                 ->  Bitmap Heap Scan on orders  (cost=482811.83..3357010.58 rows=22755050 width=8)
+                                       Recheck Cond: ((o_orderdate >= '1993-01-01'::date) AND (o_orderdate < '1994-01-01 00:00:00'::timestamp without time zone))
+                                       ->  Bitmap Index Scan on orders_o_orderdate_o_orderkey_idx  (cost=0.00..477123.07 rows=22755050 width=0)
+                                             Index Cond: ((o_orderdate >= '1993-01-01'::date) AND (o_orderdate < '1994-01-01 00:00:00'::timestamp without time zone))
+                                 ->  Hash  (cost=589016.53..589016.53 rows=3000000 width=38)
+                                       ->  Hash Join  (cost=2.53..589016.53 rows=3000000 width=38)
+                                             Hash Cond: (customer.c_nationkey = nation.n_nationkey)
+                                             ->  Seq Scan on customer  (cost=0.00..502764.00 rows=15000000 width=8)
+                                             ->  Hash  (cost=2.47..2.47 rows=5 width=30)
+                                                   ->  Hash Join  (cost=1.07..2.47 rows=5 width=30)
+                                                         Hash Cond: (nation.n_regionkey = region.r_regionkey)
+                                                         ->  Seq Scan on nation  (cost=0.00..1.25 rows=25 width=34)
+                                                         ->  Hash  (cost=1.06..1.06 rows=1 width=4)
+                                                               ->  Seq Scan on region  (cost=0.00..1.06 rows=1 width=4)
+                                                                     Filter: (r_name = 'EUROPE'::bpchar)
+               ->  Hash  (cost=31796.00..31796.00 rows=1000000 width=8)
+                     ->  Seq Scan on supplier  (cost=0.00..31796.00 rows=1000000 width=8)
+(29 rows)
+
+COMMIT;
+COMMIT

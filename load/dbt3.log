@@ -1,0 +1,529 @@
+2015-08-27 19:16:37 EDT [113727]: [1-1] user=,db=,app=,client= LOG:  database system was shut down at 2015-08-27 19:11:15 EDT
+2015-08-27 19:16:37 EDT [113727]: [2-1] user=,db=,app=,client= LOG:  MultiXact member wraparound protections are now enabled
+2015-08-27 19:16:37 EDT [113726]: [1-1] user=,db=,app=,client= LOG:  database system is ready to accept connections
+2015-08-27 19:16:37 EDT [113731]: [1-1] user=,db=,app=,client= LOG:  autovacuum launcher started
+2015-08-27 19:16:38 EDT [113736]: [1-1] user=mark,db=postgres,app=createdb,client=[local] ERROR:  database "dbt3" already exists
+2015-08-27 19:16:38 EDT [113736]: [2-1] user=mark,db=postgres,app=createdb,client=[local] STATEMENT:  CREATE DATABASE dbt3;
+2015-08-27 19:17:58 EDT [114614]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 114614 still waiting for AccessExclusiveLock on relation 16695 of database 16384 after 1000.121 ms
+2015-08-27 19:17:58 EDT [114614]: [2-1] user=mark,db=dbt3,app=psql,client=[local] DETAIL:  Processes holding the lock: 114612, 114613. Wait queue: 114614, 114615, 114616.
+2015-08-27 19:17:58 EDT [114614]: [3-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	ALTER TABLE customer
+	ADD CONSTRAINT pk_customer PRIMARY KEY (c_custkey) ;
+2015-08-27 19:17:58 EDT [114615]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 114615 still waiting for ShareLock on relation 16695 of database 16384 after 1000.111 ms
+2015-08-27 19:17:58 EDT [114615]: [2-1] user=mark,db=dbt3,app=psql,client=[local] DETAIL:  Processes holding the lock: 114612, 114613. Wait queue: 114614, 114615, 114616.
+2015-08-27 19:17:58 EDT [114615]: [3-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX customer_c_phone_idx_c_acctbal
+	ON customer (substr(c_phone::text, 1, 2))
+	WHERE c_acctbal > 0.00;
+2015-08-27 19:17:58 EDT [114616]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 114616 still waiting for ShareLock on relation 16695 of database 16384 after 1000.098 ms
+2015-08-27 19:17:58 EDT [114616]: [2-1] user=mark,db=dbt3,app=psql,client=[local] DETAIL:  Processes holding the lock: 114612, 114613. Wait queue: 114614, 114615, 114616.
+2015-08-27 19:17:58 EDT [114616]: [3-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX customer_c_phone_idx
+	ON customer (substr(c_phone::text, 1, 2), c_acctbal);
+2015-08-27 19:18:10 EDT [115481]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 115481 still waiting for AccessExclusiveLock on relation 16689 of database 16384 after 1000.122 ms
+2015-08-27 19:18:10 EDT [115481]: [2-1] user=mark,db=dbt3,app=psql,client=[local] DETAIL:  Process holding the lock: 115480. Wait queue: 115481, 115482, 115483, 115484.
+2015-08-27 19:18:10 EDT [115481]: [3-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	ALTER TABLE part
+	ADD CONSTRAINT pk_part PRIMARY KEY (p_partkey) ;
+2015-08-27 19:18:10 EDT [115482]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 115482 still waiting for ShareLock on relation 16689 of database 16384 after 1000.106 ms
+2015-08-27 19:18:10 EDT [115482]: [2-1] user=mark,db=dbt3,app=psql,client=[local] DETAIL:  Process holding the lock: 115480. Wait queue: 115481, 115482, 115483, 115484.
+2015-08-27 19:18:10 EDT [115482]: [3-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX part_p_size_idx
+	ON part(p_size);
+2015-08-27 19:18:10 EDT [115483]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 115483 still waiting for ShareLock on relation 16689 of database 16384 after 1000.126 ms
+2015-08-27 19:18:10 EDT [115483]: [2-1] user=mark,db=dbt3,app=psql,client=[local] DETAIL:  Process holding the lock: 115480. Wait queue: 115481, 115482, 115483, 115484.
+2015-08-27 19:18:10 EDT [115483]: [3-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX part_p_container_p_brand_p_partkey_idx
+	ON part(p_container, p_brand, p_partkey);
+2015-08-27 19:18:10 EDT [115484]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 115484 still waiting for ShareLock on relation 16689 of database 16384 after 1000.114 ms
+2015-08-27 19:18:10 EDT [115484]: [2-1] user=mark,db=dbt3,app=psql,client=[local] DETAIL:  Process holding the lock: 115480. Wait queue: 115481, 115482, 115483, 115484.
+2015-08-27 19:18:10 EDT [115484]: [3-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX part_p_name_idx
+	ON part(p_name);
+2015-08-27 19:18:39 EDT [114614]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 114614 acquired AccessExclusiveLock on relation 16695 of database 16384 after 42012.130 ms
+2015-08-27 19:18:39 EDT [114614]: [5-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	ALTER TABLE customer
+	ADD CONSTRAINT pk_customer PRIMARY KEY (c_custkey) ;
+2015-08-27 19:18:50 EDT [114616]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 114616 acquired ShareLock on relation 16695 of database 16384 after 52086.805 ms
+2015-08-27 19:18:50 EDT [114616]: [5-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX customer_c_phone_idx
+	ON customer (substr(c_phone::text, 1, 2), c_acctbal);
+2015-08-27 19:18:50 EDT [114615]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 114615 acquired ShareLock on relation 16695 of database 16384 after 52086.859 ms
+2015-08-27 19:18:50 EDT [114615]: [5-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX customer_c_phone_idx_c_acctbal
+	ON customer (substr(c_phone::text, 1, 2))
+	WHERE c_acctbal > 0.00;
+2015-08-27 19:19:05 EDT [115481]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 115481 acquired AccessExclusiveLock on relation 16689 of database 16384 after 56407.111 ms
+2015-08-27 19:19:05 EDT [115481]: [5-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	ALTER TABLE part
+	ADD CONSTRAINT pk_part PRIMARY KEY (p_partkey) ;
+2015-08-27 19:19:17 EDT [115483]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 115483 acquired ShareLock on relation 16689 of database 16384 after 68091.410 ms
+2015-08-27 19:19:17 EDT [115483]: [5-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX part_p_container_p_brand_p_partkey_idx
+	ON part(p_container, p_brand, p_partkey);
+2015-08-27 19:19:17 EDT [115482]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 115482 acquired ShareLock on relation 16689 of database 16384 after 68091.914 ms
+2015-08-27 19:19:17 EDT [115482]: [5-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX part_p_size_idx
+	ON part(p_size);
+2015-08-27 19:19:17 EDT [115484]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 115484 acquired ShareLock on relation 16689 of database 16384 after 68091.004 ms
+2015-08-27 19:19:17 EDT [115484]: [5-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX part_p_name_idx
+	ON part(p_name);
+2015-08-27 19:20:55 EDT [116550]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 116550 still waiting for AccessExclusiveLock on relation 16692 of database 16384 after 1000.123 ms
+2015-08-27 19:20:55 EDT [116550]: [2-1] user=mark,db=dbt3,app=psql,client=[local] DETAIL:  Process holding the lock: 116549. Wait queue: 116550.
+2015-08-27 19:20:55 EDT [116550]: [3-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	ALTER TABLE partsupp
+	ADD CONSTRAINT pk_partsupp
+	PRIMARY KEY (ps_partkey, ps_suppkey) ;
+2015-08-27 19:21:37 EDT [113728]: [1-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 19:22:08 EDT [116550]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 116550 acquired AccessExclusiveLock on relation 16692 of database 16384 after 74137.613 ms
+2015-08-27 19:22:08 EDT [116550]: [5-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	ALTER TABLE partsupp
+	ADD CONSTRAINT pk_partsupp
+	PRIMARY KEY (ps_partkey, ps_suppkey) ;
+2015-08-27 19:23:50 EDT [113728]: [2-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 30130 buffers (2.9%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=132.073 s, sync=1.078 s, total=133.191 s; sync files=100, longest=0.741 s, average=0.010 s; distance=33186060 kB, estimate=33186060 kB
+2015-08-27 19:25:05 EDT [119327]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 119327 still waiting for AccessExclusiveLock on relation 16698 of database 16384 after 1000.125 ms
+2015-08-27 19:25:05 EDT [119327]: [2-1] user=mark,db=dbt3,app=psql,client=[local] DETAIL:  Processes holding the lock: 119329, 119328. Wait queue: 119327.
+2015-08-27 19:25:05 EDT [119327]: [3-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	ALTER TABLE orders
+	ADD CONSTRAINT pk_orders PRIMARY KEY (o_orderkey) ;
+2015-08-27 19:26:37 EDT [113728]: [3-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 19:28:16 EDT [113728]: [4-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 3736 buffers (0.4%); 0 transaction log file(s) added, 0 removed, 2026 recycled; write=96.313 s, sync=0.737 s, total=98.860 s; sync files=55, longest=0.703 s, average=0.013 s; distance=15694264 kB, estimate=31436881 kB
+2015-08-27 19:29:00 EDT [119327]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 119327 acquired AccessExclusiveLock on relation 16698 of database 16384 after 236692.093 ms
+2015-08-27 19:29:00 EDT [119327]: [5-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	ALTER TABLE orders
+	ADD CONSTRAINT pk_orders PRIMARY KEY (o_orderkey) ;
+2015-08-27 19:31:37 EDT [113728]: [5-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 19:32:05 EDT [113728]: [6-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 432 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 958 recycled; write=25.287 s, sync=0.645 s, total=27.540 s; sync files=37, longest=0.629 s, average=0.017 s; distance=9128627 kB, estimate=29206055 kB
+2015-08-27 19:36:37 EDT [113728]: [7-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 19:37:02 EDT [113728]: [8-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 373 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 557 recycled; write=22.981 s, sync=0.799 s, total=24.777 s; sync files=13, longest=0.794 s, average=0.061 s; distance=9947319 kB, estimate=27280182 kB
+2015-08-27 19:41:37 EDT [113728]: [9-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 19:42:02 EDT [113728]: [10-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 371 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 607 recycled; write=22.791 s, sync=0.885 s, total=24.758 s; sync files=14, longest=0.757 s, average=0.063 s; distance=9852914 kB, estimate=25537455 kB
+2015-08-27 19:46:37 EDT [113728]: [11-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 19:47:02 EDT [113728]: [12-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 380 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 601 recycled; write=22.981 s, sync=0.281 s, total=24.348 s; sync files=13, longest=0.276 s, average=0.021 s; distance=9923056 kB, estimate=23976015 kB
+2015-08-27 19:51:37 EDT [113728]: [13-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 19:52:02 EDT [113728]: [14-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 379 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 606 recycled; write=22.887 s, sync=0.433 s, total=24.423 s; sync files=13, longest=0.427 s, average=0.033 s; distance=9902630 kB, estimate=22568677 kB
+2015-08-27 19:55:57 EDT [121471]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 121471 still waiting for AccessExclusiveLock on relation 16701 of database 16384 after 1000.126 ms
+2015-08-27 19:55:57 EDT [121471]: [2-1] user=mark,db=dbt3,app=psql,client=[local] DETAIL:  Process holding the lock: 121470. Wait queue: 121471, 121472, 121473, 121476, 121474, 121477, 121475.
+2015-08-27 19:55:57 EDT [121471]: [3-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	ALTER TABLE lineitem
+	ADD CONSTRAINT pk_lineitem PRIMARY KEY (l_orderkey, l_linenumber) ;
+2015-08-27 19:55:57 EDT [121472]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 121472 still waiting for ShareLock on relation 16701 of database 16384 after 1000.105 ms
+2015-08-27 19:55:57 EDT [121472]: [2-1] user=mark,db=dbt3,app=psql,client=[local] DETAIL:  Process holding the lock: 121470. Wait queue: 121471, 121472, 121473, 121476, 121474, 121477, 121475.
+2015-08-27 19:55:57 EDT [121472]: [3-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx
+	ON lineitem (l_orderkey);
+2015-08-27 19:55:57 EDT [121473]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 121473 still waiting for ShareLock on relation 16701 of database 16384 after 1000.110 ms
+2015-08-27 19:55:57 EDT [121473]: [2-1] user=mark,db=dbt3,app=psql,client=[local] DETAIL:  Process holding the lock: 121470. Wait queue: 121471, 121472, 121473, 121476, 121474, 121477, 121475.
+2015-08-27 19:55:57 EDT [121473]: [3-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx_l_returnflag
+	ON lineitem (l_orderkey)
+	WHERE l_returnflag = 'R';
+2015-08-27 19:55:57 EDT [121476]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 121476 still waiting for ShareLock on relation 16701 of database 16384 after 1000.110 ms
+2015-08-27 19:55:57 EDT [121476]: [2-1] user=mark,db=dbt3,app=psql,client=[local] DETAIL:  Process holding the lock: 121470. Wait queue: 121471, 121472, 121473, 121476, 121474, 121477, 121475.
+2015-08-27 19:55:57 EDT [121476]: [3-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_shipdate_l_suppkey__idx
+	ON lineitem (l_shipdate, l_suppkey);
+2015-08-27 19:55:57 EDT [121474]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 121474 still waiting for ShareLock on relation 16701 of database 16384 after 1000.111 ms
+2015-08-27 19:55:57 EDT [121474]: [2-1] user=mark,db=dbt3,app=psql,client=[local] DETAIL:  Process holding the lock: 121470. Wait queue: 121471, 121472, 121473, 121476, 121474, 121477, 121475.
+2015-08-27 19:55:57 EDT [121474]: [3-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx_part1
+	ON lineitem (l_orderkey)
+	WHERE l_commitdate < l_receiptdate;
+2015-08-27 19:55:57 EDT [121477]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 121477 still waiting for ShareLock on relation 16701 of database 16384 after 1000.106 ms
+2015-08-27 19:55:57 EDT [121477]: [2-1] user=mark,db=dbt3,app=psql,client=[local] DETAIL:  Process holding the lock: 121470. Wait queue: 121471, 121472, 121473, 121476, 121474, 121477, 121475.
+2015-08-27 19:55:57 EDT [121477]: [3-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_l_linenumber_l_shipdate_idx
+	ON lineitem (l_orderkey, l_linenumber, l_shipdate);
+2015-08-27 19:55:57 EDT [121475]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 121475 still waiting for ShareLock on relation 16701 of database 16384 after 1000.096 ms
+2015-08-27 19:55:57 EDT [121475]: [2-1] user=mark,db=dbt3,app=psql,client=[local] DETAIL:  Process holding the lock: 121470. Wait queue: 121471, 121472, 121473, 121476, 121474, 121477, 121475.
+2015-08-27 19:55:57 EDT [121475]: [3-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx_part2
+	ON lineitem (l_orderkey)
+	WHERE l_commitdate < l_receiptdate
+	  AND l_shipdate < l_commitdate;
+2015-08-27 19:56:37 EDT [113728]: [15-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 19:59:06 EDT [113728]: [16-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 2372 buffers (0.2%); 0 transaction log file(s) added, 0 removed, 604 recycled; write=147.059 s, sync=0.741 s, total=148.940 s; sync files=45, longest=0.717 s, average=0.016 s; distance=8483864 kB, estimate=21160195 kB
+2015-08-27 20:27:05 EDT [121470]: [1-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121470.0", size 1073741824
+2015-08-27 20:27:05 EDT [121470]: [2-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-08-27 20:27:06 EDT [121470]: [3-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121470.1", size 1073741824
+2015-08-27 20:27:06 EDT [121470]: [4-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-08-27 20:27:06 EDT [121470]: [5-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121470.2", size 1073741824
+2015-08-27 20:27:06 EDT [121470]: [6-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-08-27 20:27:06 EDT [121470]: [7-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121470.3", size 1073741824
+2015-08-27 20:27:06 EDT [121470]: [8-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-08-27 20:27:06 EDT [121470]: [9-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121470.4", size 1073741824
+2015-08-27 20:27:06 EDT [121470]: [10-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-08-27 20:27:06 EDT [121470]: [11-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121470.5", size 1073741824
+2015-08-27 20:27:06 EDT [121470]: [12-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-08-27 20:27:06 EDT [121470]: [13-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121470.6", size 1073741824
+2015-08-27 20:27:06 EDT [121470]: [14-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-08-27 20:27:06 EDT [121470]: [15-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121470.7", size 1073741824
+2015-08-27 20:27:06 EDT [121470]: [16-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-08-27 20:27:06 EDT [121470]: [17-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121470.8", size 1073741824
+2015-08-27 20:27:06 EDT [121470]: [18-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-08-27 20:27:06 EDT [121470]: [19-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121470.9", size 1073741824
+2015-08-27 20:27:06 EDT [121470]: [20-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-08-27 20:27:06 EDT [121470]: [21-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121470.10", size 1073741824
+2015-08-27 20:27:06 EDT [121470]: [22-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-08-27 20:27:07 EDT [121470]: [23-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121470.11", size 1073741824
+2015-08-27 20:27:07 EDT [121470]: [24-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-08-27 20:27:07 EDT [121470]: [25-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121470.12", size 1073741824
+2015-08-27 20:27:07 EDT [121470]: [26-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-08-27 20:27:07 EDT [121470]: [27-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121470.13", size 1073741824
+2015-08-27 20:27:07 EDT [121470]: [28-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-08-27 20:27:07 EDT [121470]: [29-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121470.14", size 1073741824
+2015-08-27 20:27:07 EDT [121470]: [30-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-08-27 20:27:07 EDT [121470]: [31-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121470.15", size 1073741824
+2015-08-27 20:27:07 EDT [121470]: [32-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-08-27 20:27:07 EDT [121470]: [33-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121470.16", size 1073741824
+2015-08-27 20:27:07 EDT [121470]: [34-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-08-27 20:27:07 EDT [121470]: [35-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121470.17", size 1073741824
+2015-08-27 20:27:07 EDT [121470]: [36-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-08-27 20:27:07 EDT [121470]: [37-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121470.18", size 1073741824
+2015-08-27 20:27:07 EDT [121470]: [38-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-08-27 20:27:08 EDT [121470]: [39-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121470.19", size 1073741824
+2015-08-27 20:27:08 EDT [121470]: [40-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-08-27 20:27:08 EDT [121470]: [41-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121470.20", size 147611648
+2015-08-27 20:27:08 EDT [121470]: [42-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_partkey_l_quantity_l_shipmode_idx
+	ON lineitem (l_partkey, l_quantity, l_shipmode);
+2015-08-27 20:27:08 EDT [121471]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 121471 acquired AccessExclusiveLock on relation 16701 of database 16384 after 1872645.867 ms
+2015-08-27 20:27:08 EDT [121471]: [5-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	ALTER TABLE lineitem
+	ADD CONSTRAINT pk_lineitem PRIMARY KEY (l_orderkey, l_linenumber) ;
+2015-08-27 20:31:37 EDT [113728]: [17-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 20:34:08 EDT [113728]: [18-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 2102 buffers (0.2%); 0 transaction log file(s) added, 0 removed, 518 recycled; write=149.057 s, sync=0.018 s, total=150.323 s; sync files=80, longest=0.003 s, average=0.000 s; distance=96 kB, estimate=19044185 kB
+2015-08-27 20:39:05 EDT [121471]: [6-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121471.0", size 1073741824
+2015-08-27 20:39:05 EDT [121471]: [7-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	ALTER TABLE lineitem
+	ADD CONSTRAINT pk_lineitem PRIMARY KEY (l_orderkey, l_linenumber) ;
+2015-08-27 20:39:05 EDT [121471]: [8-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121471.1", size 1073741824
+2015-08-27 20:39:05 EDT [121471]: [9-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	ALTER TABLE lineitem
+	ADD CONSTRAINT pk_lineitem PRIMARY KEY (l_orderkey, l_linenumber) ;
+2015-08-27 20:39:05 EDT [121471]: [10-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121471.2", size 1073741824
+2015-08-27 20:39:05 EDT [121471]: [11-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	ALTER TABLE lineitem
+	ADD CONSTRAINT pk_lineitem PRIMARY KEY (l_orderkey, l_linenumber) ;
+2015-08-27 20:39:05 EDT [121471]: [12-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121471.3", size 1073741824
+2015-08-27 20:39:05 EDT [121471]: [13-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	ALTER TABLE lineitem
+	ADD CONSTRAINT pk_lineitem PRIMARY KEY (l_orderkey, l_linenumber) ;
+2015-08-27 20:39:05 EDT [121471]: [14-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121471.4", size 1073741824
+2015-08-27 20:39:05 EDT [121471]: [15-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	ALTER TABLE lineitem
+	ADD CONSTRAINT pk_lineitem PRIMARY KEY (l_orderkey, l_linenumber) ;
+2015-08-27 20:39:05 EDT [121471]: [16-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121471.5", size 1073741824
+2015-08-27 20:39:05 EDT [121471]: [17-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	ALTER TABLE lineitem
+	ADD CONSTRAINT pk_lineitem PRIMARY KEY (l_orderkey, l_linenumber) ;
+2015-08-27 20:39:06 EDT [121471]: [18-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121471.6", size 1073741824
+2015-08-27 20:39:06 EDT [121471]: [19-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	ALTER TABLE lineitem
+	ADD CONSTRAINT pk_lineitem PRIMARY KEY (l_orderkey, l_linenumber) ;
+2015-08-27 20:39:06 EDT [121471]: [20-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121471.7", size 1073741824
+2015-08-27 20:39:06 EDT [121471]: [21-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	ALTER TABLE lineitem
+	ADD CONSTRAINT pk_lineitem PRIMARY KEY (l_orderkey, l_linenumber) ;
+2015-08-27 20:39:06 EDT [121471]: [22-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121471.8", size 1073741824
+2015-08-27 20:39:06 EDT [121471]: [23-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	ALTER TABLE lineitem
+	ADD CONSTRAINT pk_lineitem PRIMARY KEY (l_orderkey, l_linenumber) ;
+2015-08-27 20:39:06 EDT [121471]: [24-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121471.9", size 1073741824
+2015-08-27 20:39:06 EDT [121471]: [25-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	ALTER TABLE lineitem
+	ADD CONSTRAINT pk_lineitem PRIMARY KEY (l_orderkey, l_linenumber) ;
+2015-08-27 20:39:06 EDT [121471]: [26-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121471.10", size 1073741824
+2015-08-27 20:39:06 EDT [121471]: [27-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	ALTER TABLE lineitem
+	ADD CONSTRAINT pk_lineitem PRIMARY KEY (l_orderkey, l_linenumber) ;
+2015-08-27 20:39:06 EDT [121471]: [28-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121471.11", size 201342976
+2015-08-27 20:39:06 EDT [121471]: [29-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	ALTER TABLE lineitem
+	ADD CONSTRAINT pk_lineitem PRIMARY KEY (l_orderkey, l_linenumber) ;
+2015-08-27 20:39:07 EDT [121472]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 121472 acquired ShareLock on relation 16701 of database 16384 after 2591116.760 ms
+2015-08-27 20:39:07 EDT [121472]: [5-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx
+	ON lineitem (l_orderkey);
+2015-08-27 20:39:07 EDT [121476]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 121476 acquired ShareLock on relation 16701 of database 16384 after 2591116.110 ms
+2015-08-27 20:39:07 EDT [121476]: [5-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_shipdate_l_suppkey__idx
+	ON lineitem (l_shipdate, l_suppkey);
+2015-08-27 20:39:07 EDT [121473]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 121473 acquired ShareLock on relation 16701 of database 16384 after 2591116.616 ms
+2015-08-27 20:39:07 EDT [121473]: [5-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx_l_returnflag
+	ON lineitem (l_orderkey)
+	WHERE l_returnflag = 'R';
+2015-08-27 20:39:07 EDT [121477]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 121477 acquired ShareLock on relation 16701 of database 16384 after 2591115.580 ms
+2015-08-27 20:39:07 EDT [121477]: [5-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_l_linenumber_l_shipdate_idx
+	ON lineitem (l_orderkey, l_linenumber, l_shipdate);
+2015-08-27 20:39:07 EDT [121474]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 121474 acquired ShareLock on relation 16701 of database 16384 after 2591115.972 ms
+2015-08-27 20:39:07 EDT [121474]: [5-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx_part1
+	ON lineitem (l_orderkey)
+	WHERE l_commitdate < l_receiptdate;
+2015-08-27 20:39:07 EDT [121475]: [4-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  process 121475 acquired ShareLock on relation 16701 of database 16384 after 2591115.452 ms
+2015-08-27 20:39:07 EDT [121475]: [5-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx_part2
+	ON lineitem (l_orderkey)
+	WHERE l_commitdate < l_receiptdate
+	  AND l_shipdate < l_commitdate;
+2015-08-27 20:41:37 EDT [113728]: [19-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 20:41:39 EDT [113728]: [20-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 23 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=2.217 s, sync=0.017 s, total=2.240 s; sync files=14, longest=0.009 s, average=0.001 s; distance=109 kB, estimate=17139778 kB
+2015-08-27 20:46:37 EDT [113728]: [21-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 20:46:38 EDT [113728]: [22-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.311 s, sync=0.001 s, total=0.315 s; sync files=2, longest=0.000 s, average=0.000 s; distance=8 kB, estimate=15425801 kB
+2015-08-27 20:48:16 EDT [121474]: [6-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121474.0", size 1073741824
+2015-08-27 20:48:16 EDT [121474]: [7-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx_part1
+	ON lineitem (l_orderkey)
+	WHERE l_commitdate < l_receiptdate;
+2015-08-27 20:48:16 EDT [121474]: [8-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121474.1", size 1073741824
+2015-08-27 20:48:16 EDT [121474]: [9-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx_part1
+	ON lineitem (l_orderkey)
+	WHERE l_commitdate < l_receiptdate;
+2015-08-27 20:48:17 EDT [121474]: [10-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121474.2", size 1073741824
+2015-08-27 20:48:17 EDT [121474]: [11-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx_part1
+	ON lineitem (l_orderkey)
+	WHERE l_commitdate < l_receiptdate;
+2015-08-27 20:48:17 EDT [121474]: [12-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121474.3", size 1073741824
+2015-08-27 20:48:17 EDT [121474]: [13-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx_part1
+	ON lineitem (l_orderkey)
+	WHERE l_commitdate < l_receiptdate;
+2015-08-27 20:48:17 EDT [121474]: [14-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121474.4", size 1073741824
+2015-08-27 20:48:17 EDT [121474]: [15-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx_part1
+	ON lineitem (l_orderkey)
+	WHERE l_commitdate < l_receiptdate;
+2015-08-27 20:48:17 EDT [121474]: [16-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121474.5", size 1073741824
+2015-08-27 20:48:17 EDT [121474]: [17-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx_part1
+	ON lineitem (l_orderkey)
+	WHERE l_commitdate < l_receiptdate;
+2015-08-27 20:48:17 EDT [121474]: [18-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121474.6", size 1073741824
+2015-08-27 20:48:17 EDT [121474]: [19-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx_part1
+	ON lineitem (l_orderkey)
+	WHERE l_commitdate < l_receiptdate;
+2015-08-27 20:48:17 EDT [121474]: [20-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121474.7", size 78348288
+2015-08-27 20:48:17 EDT [121474]: [21-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx_part1
+	ON lineitem (l_orderkey)
+	WHERE l_commitdate < l_receiptdate;
+2015-08-27 20:50:37 EDT [121472]: [6-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121472.0", size 1073741824
+2015-08-27 20:50:38 EDT [121472]: [7-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx
+	ON lineitem (l_orderkey);
+2015-08-27 20:50:38 EDT [121472]: [8-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121472.1", size 1073741824
+2015-08-27 20:50:38 EDT [121472]: [9-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx
+	ON lineitem (l_orderkey);
+2015-08-27 20:50:38 EDT [121472]: [10-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121472.2", size 1073741824
+2015-08-27 20:50:38 EDT [121472]: [11-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx
+	ON lineitem (l_orderkey);
+2015-08-27 20:50:38 EDT [121472]: [12-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121472.3", size 1073741824
+2015-08-27 20:50:38 EDT [121472]: [13-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx
+	ON lineitem (l_orderkey);
+2015-08-27 20:50:38 EDT [121472]: [14-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121472.4", size 1073741824
+2015-08-27 20:50:38 EDT [121472]: [15-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx
+	ON lineitem (l_orderkey);
+2015-08-27 20:50:38 EDT [121472]: [16-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121472.5", size 1073741824
+2015-08-27 20:50:38 EDT [121472]: [17-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx
+	ON lineitem (l_orderkey);
+2015-08-27 20:50:38 EDT [121472]: [18-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121472.6", size 1073741824
+2015-08-27 20:50:38 EDT [121472]: [19-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx
+	ON lineitem (l_orderkey);
+2015-08-27 20:50:38 EDT [121472]: [20-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121472.7", size 1073741824
+2015-08-27 20:50:38 EDT [121472]: [21-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx
+	ON lineitem (l_orderkey);
+2015-08-27 20:50:38 EDT [121472]: [22-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121472.8", size 1073741824
+2015-08-27 20:50:38 EDT [121472]: [23-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx
+	ON lineitem (l_orderkey);
+2015-08-27 20:50:39 EDT [121472]: [24-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121472.9", size 1073741824
+2015-08-27 20:50:39 EDT [121472]: [25-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx
+	ON lineitem (l_orderkey);
+2015-08-27 20:50:39 EDT [121472]: [26-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121472.10", size 1073741824
+2015-08-27 20:50:39 EDT [121472]: [27-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx
+	ON lineitem (l_orderkey);
+2015-08-27 20:50:39 EDT [121472]: [28-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121472.11", size 201342976
+2015-08-27 20:50:39 EDT [121472]: [29-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_idx
+	ON lineitem (l_orderkey);
+2015-08-27 20:51:37 EDT [113728]: [23-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 20:51:37 EDT [113728]: [24-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.211 s, sync=0.003 s, total=0.224 s; sync files=2, longest=0.001 s, average=0.001 s; distance=13 kB, estimate=13883222 kB
+2015-08-27 20:52:02 EDT [121477]: [6-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121477.0", size 1073741824
+2015-08-27 20:52:02 EDT [121477]: [7-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_l_linenumber_l_shipdate_idx
+	ON lineitem (l_orderkey, l_linenumber, l_shipdate);
+2015-08-27 20:52:02 EDT [121477]: [8-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121477.1", size 1073741824
+2015-08-27 20:52:02 EDT [121477]: [9-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_l_linenumber_l_shipdate_idx
+	ON lineitem (l_orderkey, l_linenumber, l_shipdate);
+2015-08-27 20:52:02 EDT [121477]: [10-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121477.2", size 1073741824
+2015-08-27 20:52:02 EDT [121477]: [11-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_l_linenumber_l_shipdate_idx
+	ON lineitem (l_orderkey, l_linenumber, l_shipdate);
+2015-08-27 20:52:02 EDT [121477]: [12-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121477.3", size 1073741824
+2015-08-27 20:52:02 EDT [121477]: [13-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_l_linenumber_l_shipdate_idx
+	ON lineitem (l_orderkey, l_linenumber, l_shipdate);
+2015-08-27 20:52:02 EDT [121477]: [14-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121477.4", size 1073741824
+2015-08-27 20:52:02 EDT [121477]: [15-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_l_linenumber_l_shipdate_idx
+	ON lineitem (l_orderkey, l_linenumber, l_shipdate);
+2015-08-27 20:52:03 EDT [121477]: [16-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121477.5", size 1073741824
+2015-08-27 20:52:03 EDT [121477]: [17-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_l_linenumber_l_shipdate_idx
+	ON lineitem (l_orderkey, l_linenumber, l_shipdate);
+2015-08-27 20:52:03 EDT [121477]: [18-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121477.6", size 1073741824
+2015-08-27 20:52:03 EDT [121477]: [19-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_l_linenumber_l_shipdate_idx
+	ON lineitem (l_orderkey, l_linenumber, l_shipdate);
+2015-08-27 20:52:03 EDT [121477]: [20-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121477.7", size 1073741824
+2015-08-27 20:52:03 EDT [121477]: [21-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_l_linenumber_l_shipdate_idx
+	ON lineitem (l_orderkey, l_linenumber, l_shipdate);
+2015-08-27 20:52:03 EDT [121477]: [22-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121477.8", size 1073741824
+2015-08-27 20:52:03 EDT [121477]: [23-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_l_linenumber_l_shipdate_idx
+	ON lineitem (l_orderkey, l_linenumber, l_shipdate);
+2015-08-27 20:52:03 EDT [121477]: [24-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121477.9", size 1073741824
+2015-08-27 20:52:03 EDT [121477]: [25-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_l_linenumber_l_shipdate_idx
+	ON lineitem (l_orderkey, l_linenumber, l_shipdate);
+2015-08-27 20:52:03 EDT [121477]: [26-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121477.10", size 1073741824
+2015-08-27 20:52:03 EDT [121477]: [27-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_l_linenumber_l_shipdate_idx
+	ON lineitem (l_orderkey, l_linenumber, l_shipdate);
+2015-08-27 20:52:03 EDT [121477]: [28-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121477.11", size 1073741824
+2015-08-27 20:52:03 EDT [121477]: [29-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_l_linenumber_l_shipdate_idx
+	ON lineitem (l_orderkey, l_linenumber, l_shipdate);
+2015-08-27 20:52:03 EDT [121477]: [30-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121477.12", size 1073741824
+2015-08-27 20:52:03 EDT [121477]: [31-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_l_linenumber_l_shipdate_idx
+	ON lineitem (l_orderkey, l_linenumber, l_shipdate);
+2015-08-27 20:52:04 EDT [121477]: [32-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121477.13", size 1073741824
+2015-08-27 20:52:04 EDT [121477]: [33-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_l_linenumber_l_shipdate_idx
+	ON lineitem (l_orderkey, l_linenumber, l_shipdate);
+2015-08-27 20:52:04 EDT [121477]: [34-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121477.14", size 1073741824
+2015-08-27 20:52:04 EDT [121477]: [35-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_l_linenumber_l_shipdate_idx
+	ON lineitem (l_orderkey, l_linenumber, l_shipdate);
+2015-08-27 20:52:04 EDT [121477]: [36-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121477.15", size 711360512
+2015-08-27 20:52:04 EDT [121477]: [37-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_orderkey_l_linenumber_l_shipdate_idx
+	ON lineitem (l_orderkey, l_linenumber, l_shipdate);
+2015-08-27 20:56:37 EDT [113728]: [25-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 20:56:37 EDT [113728]: [26-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.111 s, sync=0.001 s, total=0.114 s; sync files=2, longest=0.000 s, average=0.000 s; distance=4 kB, estimate=12494900 kB
+2015-08-27 21:17:22 EDT [121476]: [6-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121476.0", size 1073741824
+2015-08-27 21:17:22 EDT [121476]: [7-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_shipdate_l_suppkey__idx
+	ON lineitem (l_shipdate, l_suppkey);
+2015-08-27 21:17:22 EDT [121476]: [8-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121476.1", size 1073741824
+2015-08-27 21:17:22 EDT [121476]: [9-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_shipdate_l_suppkey__idx
+	ON lineitem (l_shipdate, l_suppkey);
+2015-08-27 21:17:22 EDT [121476]: [10-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121476.2", size 1073741824
+2015-08-27 21:17:22 EDT [121476]: [11-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_shipdate_l_suppkey__idx
+	ON lineitem (l_shipdate, l_suppkey);
+2015-08-27 21:17:23 EDT [121476]: [12-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121476.3", size 1073741824
+2015-08-27 21:17:23 EDT [121476]: [13-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_shipdate_l_suppkey__idx
+	ON lineitem (l_shipdate, l_suppkey);
+2015-08-27 21:17:23 EDT [121476]: [14-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121476.4", size 1073741824
+2015-08-27 21:17:23 EDT [121476]: [15-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_shipdate_l_suppkey__idx
+	ON lineitem (l_shipdate, l_suppkey);
+2015-08-27 21:17:23 EDT [121476]: [16-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121476.5", size 1073741824
+2015-08-27 21:17:23 EDT [121476]: [17-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_shipdate_l_suppkey__idx
+	ON lineitem (l_shipdate, l_suppkey);
+2015-08-27 21:17:23 EDT [121476]: [18-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121476.6", size 1073741824
+2015-08-27 21:17:23 EDT [121476]: [19-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_shipdate_l_suppkey__idx
+	ON lineitem (l_shipdate, l_suppkey);
+2015-08-27 21:17:23 EDT [121476]: [20-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121476.7", size 1073741824
+2015-08-27 21:17:23 EDT [121476]: [21-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_shipdate_l_suppkey__idx
+	ON lineitem (l_shipdate, l_suppkey);
+2015-08-27 21:17:24 EDT [121476]: [22-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121476.8", size 1073741824
+2015-08-27 21:17:24 EDT [121476]: [23-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_shipdate_l_suppkey__idx
+	ON lineitem (l_shipdate, l_suppkey);
+2015-08-27 21:17:24 EDT [121476]: [24-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121476.9", size 1073741824
+2015-08-27 21:17:24 EDT [121476]: [25-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_shipdate_l_suppkey__idx
+	ON lineitem (l_shipdate, l_suppkey);
+2015-08-27 21:17:24 EDT [121476]: [26-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121476.10", size 1073741824
+2015-08-27 21:17:24 EDT [121476]: [27-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_shipdate_l_suppkey__idx
+	ON lineitem (l_shipdate, l_suppkey);
+2015-08-27 21:17:24 EDT [121476]: [28-1] user=mark,db=dbt3,app=psql,client=[local] LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp121476.11", size 201310208
+2015-08-27 21:17:24 EDT [121476]: [29-1] user=mark,db=dbt3,app=psql,client=[local] STATEMENT:  
+	CREATE INDEX lineitem_l_shipdate_l_suppkey__idx
+	ON lineitem (l_shipdate, l_suppkey);
+2015-08-27 21:21:38 EDT [113728]: [27-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-27 21:22:38 EDT [113726]: [2-1] user=,db=,app=,client= LOG:  received fast shutdown request
+2015-08-27 21:22:38 EDT [113726]: [3-1] user=,db=,app=,client= LOG:  aborting any active transactions
+2015-08-27 21:22:38 EDT [113731]: [2-1] user=,db=,app=,client= LOG:  autovacuum launcher shutting down
+2015-08-27 21:22:38 EDT [113728]: [28-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 2957 buffers (0.3%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=60.151 s, sync=0.033 s, total=60.187 s; sync files=87, longest=0.009 s, average=0.000 s; distance=669366 kB, estimate=11312347 kB
+2015-08-27 21:22:38 EDT [113728]: [29-1] user=,db=,app=,client= LOG:  shutting down
+2015-08-27 21:22:38 EDT [113728]: [30-1] user=,db=,app=,client= LOG:  checkpoint starting: shutdown immediate
+2015-08-27 21:22:38 EDT [113728]: [31-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 110 buffers (0.0%); 0 transaction log file(s) added, 41 removed, 0 recycled; write=0.012 s, sync=0.009 s, total=0.087 s; sync files=26, longest=0.001 s, average=0.000 s; distance=709 kB, estimate=10181183 kB
+2015-08-27 21:22:38 EDT [113728]: [32-1] user=,db=,app=,client= LOG:  database system is shut down
